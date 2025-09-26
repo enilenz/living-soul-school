@@ -24,6 +24,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Product Sans', 'Helvetica Neue', sans-serif;
   }
 }
 
