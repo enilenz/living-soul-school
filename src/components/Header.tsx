@@ -26,7 +26,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex font-['Helvetica_Neue']">
+    <div className="flex ">
       <div
         className={`flex flex-row justify-between items-center px-24 py-2 fixed z-50 w-full ${
           isTransparentPage ? "bg-white" : "bg-white"
