@@ -84,14 +84,14 @@ const upcomingEvents = [
         <div className="lg:col-span-3 space-y-6">
           {newsData.map((item, idx) => (
             <div key={idx} className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row">
-              <div className="w-full md:w-1/3 h-48 md:h-auto relative">
+              {/* <div className="w-full md:w-1/3 h-48 md:h-auto relative">
                 <Image
                   src={item.image}
                   alt={item.title}
                   layout="fill"
                   objectFit="cover"
                 />
-              </div>
+              </div> */}
               <div className="p-4 flex flex-col justify-center">
                 <h2 className="text-lg font-semibold text-gray-800">{item.title}</h2>
                 <p className="mt-2 text-sm text-gray-600">{item.description}</p>

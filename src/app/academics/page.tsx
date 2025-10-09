@@ -30,6 +30,8 @@ export default function Home() {
   // const [activeTab, setActiveTab] = useState("Creche");
 
   type TabType = "Cretche" | "Primary" | "Secondary";
+  const tabs: TabType[] = ["Cretche", "Primary", "Secondary"];
+
 
 const [activeTab, setActiveTab] = useState<TabType>("Cretche");
 
@@ -261,7 +263,7 @@ const schedules: Record<TabType, string[][]> = {
 
   {/* Tabs */}
   <div className="flex gap-8 mb-6 border-b border-gray-200">
-    {["Cretche", "Primary", "Secondary"].map((tab) => (
+    {tabs.map((tab) => (
       <button
         key={tab}
         onClick={() => setActiveTab(tab)}
