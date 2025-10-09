@@ -107,10 +107,10 @@ export default function Home() {
 
           {/* Right visuals */}
           <div className="relative flex justify-center items-center">
-            {/* Bottom colored div */}
+            
             <div className="absolute w-[260px] h-[320px] rounded-xl bg-violet-300 shadow-md rotate-[8deg] -translate-y-2 translate-x-7" />
 
-            {/* Top image */}
+            
             <div className="relative w-[290px] h-[310px] rounded-xl overflow-hidden shadow-lg z-10">
               <Image
                 src={Cretche1}

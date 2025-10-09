@@ -134,7 +134,7 @@ export default function Navbar() {
         <Link href="/academics" className="hover:text-gray-600">
           Academics
         </Link>
-        <Link href="/news" className="hover:text-gray-600">
+        <Link href="/newsandevents" className="hover:text-gray-600">
           News & Events
         </Link>
         <Link href="/gallery" className="hover:text-gray-600">

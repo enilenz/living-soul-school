@@ -20,7 +20,7 @@ export default function Footer() {
         <Link href="/" className="hover:text-gray-400 transition">FAQs</Link>
         <Link href="/" className="hover:text-gray-400 transition">News</Link>
         <Link href="/" className="hover:text-gray-400 transition">Careers</Link>
-        <Link href="/" className="hover:text-gray-400 transition">Policies</Link>
+        <Link href="/codesandpolicies" className="hover:text-gray-400 transition">Policies</Link>
       </div>
 
       {/* Second line */}
@@ -64,7 +64,7 @@ export default function Footer() {
       <p className="text-md text-white">© 2024 Gidi School</p> */}
         <div className="flex flex-col items-center w-full space-y-4">
     <div className="w-full border-t border-gray-700"></div>
-    <p className="text-md text-white">© 2024 Your School Name.</p>
+    <p className="text-md text-white">© 2025 Living Soul Schools.</p>
   </div>
     </footer>
   );
