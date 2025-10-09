@@ -10,15 +10,9 @@ import FeaturedNewsCard from "@/components/FeaturedNewsCard";
 
 import LandingImage from "@/assets/LandingImage.jpg";
 import Graduates from "@/assets/Graduates.png";
-import BadgeCheck from "@/assets/BadgeCheck.png";
 import Child1 from "@/assets/Child1.jpg";
 import Child2 from "@/assets/Child2.jpg";
 import Child3 from "@/assets/Child3.jpg";
-
-// import { BadgeCheck, CheckCircle2 } from "lucide-react";
-// import { HiBadgeCheck } from "react-icons/hi";
-
-
 
 export default function Home() {
   return (
@@ -46,9 +40,8 @@ export default function Home() {
     <section className="bg-white text-black px-8 md:px-24 py-20 space-y-20">
       {/* The 3 A's */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          <span className="text-black">The </span>
-          <span className="text-blue-950">3 A&apos;s</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
+          The 3 A&apos;s
         </h2>
 
         <div className="grid md:grid-cols-3 gap-10">
@@ -83,94 +76,44 @@ export default function Home() {
 
       {/* Admission Requirements */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">
-          <span className="text-black">Admission </span>
-          <span className="text-blue-950">Requirements</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-black mb-10">
+          Admission Requirements
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Creche */}
-          <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-100">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-gray-800">Creche</h3>
-              <span className="text-sm text-gray-500">Ages 1-3</span>
-            </div>
-            <ul className="space-y-2 text-sm text-gray-700">
-              {[
-                "Birth Certificate or International Passport",
-                "Immunization Records",
-                "Passport-sized photographs for child",
-                "Recent passport photograph for both parents/guardian",
-                "Last Academic Record",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2">
-<Image
-  src={BadgeCheck}
-  alt="Check"
-  width={20}
-  height={20}
-  className="inline-block mr-2"
-/>
-                  <span>{item}</span>
-                </li>
-              ))}
+          <div className="bg-gray-50 rounded-2xl shadow-sm p-6 border border-gray-200">
+            <h3 className="text-xl font-semibold mb-4">CRECHE</h3>
+            <ul className="space-y-2 text-gray-700 list-disc list-inside">
+              <li>Birth Certificate or International Passport</li>
+              <li>Immunization Records</li>
+              <li>Two passport photographs for the child</li>
+              <li>Passport photographs for both parents/guardian</li>
+              <li>Last Academic Record</li>
             </ul>
           </div>
 
           {/* Primary */}
-          <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-100">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-gray-800">Primary</h3>
-              <span className="text-sm text-gray-500">Ages 5-10</span>
-            </div>
-            <ul className="space-y-2 text-sm text-gray-700">
-              {[
-                "Birth Certificate or International Passport",
-                "Immunization Records",
-                "Passport-sized photographs for child",
-                "Recent passport photograph for both parents/guardian",
-                "Last Academic Record",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2">
-                <Image
-  src={BadgeCheck}
-  alt="Check"
-  width={20}
-  height={20}
-  className="inline-block mr-2"
-/>
-                  <span>{item}</span>
-                </li>
-              ))}
+          <div className="bg-gray-50 rounded-2xl shadow-sm p-6 border border-gray-200">
+            <h3 className="text-xl font-semibold mb-4">PRIMARY</h3>
+            <ul className="space-y-2 text-gray-700 list-disc list-inside">
+              <li>Birth Certificate or International Passport</li>
+              <li>Immunization Records</li>
+              <li>Two recent passport photographs for the child</li>
+              <li>Passport photographs for both parents/guardian</li>
+              <li>Last Academic Record</li>
             </ul>
           </div>
 
           {/* College */}
-          <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-100">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-gray-800">College</h3>
-              <span className="text-sm text-gray-500">Ages 11-16</span>
-            </div>
-            <ul className="space-y-2 text-sm text-gray-700">
-              {[
-                "Birth Certificate or International Passport",
-                "Immunization Records",
-                "Passport-sized photographs for child",
-                "Recent passport photograph for both parents/guardian",
-                "Medical Records",
-                "Last Academic Record",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2">
-   <Image
-  src={BadgeCheck}
-  alt="Check"
-  width={20}
-  height={20}
-  className="inline-block mr-2"
-/>
-                  <span>{item}</span>
-                </li>
-              ))}
+          <div className="bg-gray-50 rounded-2xl shadow-sm p-6 border border-gray-200">
+            <h3 className="text-xl font-semibold mb-4">COLLEGE</h3>
+            <ul className="space-y-2 text-gray-700 list-disc list-inside">
+              <li>Birth Certificate or International Passport</li>
+              <li>Two recent passport photographs for the child</li>
+              <li>Passport photographs for both parents/guardian</li>
+              <li>Medical Records</li>
+              <li>Last Academic Record</li>
             </ul>
           </div>
         </div>

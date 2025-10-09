@@ -4,6 +4,9 @@ import Header from "@/components/Header";
 
 import { Button } from "@/components/ui/button";
 import Card from "@/components/Card";
+import ReadMoreCard from "@/components/ReadMoreCard";
+import AutoCarousel from "@/components/AutoCarousel";
+import FeaturedNewsCard from "@/components/FeaturedNewsCard";
 
 import LandingImage from "@/assets/LandingImage.jpg";
 import Child1 from "@/assets/Child1.jpg";
@@ -19,6 +22,11 @@ import BrightFuture3 from "@/assets/BrightFuture3.jpg";
 import Imagery1 from "@/assets/Imagery1.png";
 import Imagery2 from "@/assets/Imagery2.png";
 import Imagery3 from "@/assets/Imagery3.png";
+import Imagery4 from "@/assets/Imagery4.png";
+
+import BlueGrids from "@/assets/BlueGrids.png";
+
+import governanceJson from "@/utils/governance.json";
 
 export default function Home() {
   return (
@@ -38,7 +46,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
               Inspiring Excellence Nurturing Leaders
             </h1>
-            <p className="text-md font-['Product_Sans']">
+            <p className="text-md ">
               Welcome to Living Soul Schools, where we combine academic
               excellence with character development to prepare our students for
               a bright future.
@@ -173,41 +181,110 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
-
-      </section >
-
-
+      </section>
 
       <section className="py-32 px-24 bg-white">
-       <div className="">
-           <div className="flex items-center">
-                <h1 className="text-black text-3xl font-bold leading-none">
-                  Our Story & Goverance
-                </h1>
-                <Image
-                  src={Imagery3.src}
-                  alt="Icon"
-                  width={100}
-                  height={80}
-                  className=" inline-block"
-                />
-              </div>
-       <p className="text-gray-800 text-sm">Discover our story, vision, and the people who guide our journey.</p>
-       </div>
+        <div className="mb-8">
+          <div className="flex items-center">
+            <h1 className="text-black text-3xl font-bold leading-none ">
+              Our Story & <span className="text-blue-950">Goverance</span>
+            </h1>
+            <Image
+              src={Imagery3.src}
+              alt="Icon"
+              width={100}
+              height={80}
+              className=" inline-block"
+            />
+          </div>
+          <p className="text-gray-800 text-sm -mt-3">
+            Discover our story, vision, and the people who guide our journey.
+          </p>
+        </div>
 
-      <div className=""></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
+          {governanceJson.map((card, index) => (
+            <ReadMoreCard
+              key={index}
+              title={card.title}
+              description={card.description}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section
+        className="relative px-6 sm:px-12 md:px-24 
+             bg-no-repeat bg-cover 
+             bg-top md:bg-[position:center_top_-30px] text-white
+             py-16 md:py-28"
+        style={{ backgroundImage: `url(${BlueGrids.src})` }}
+      >
+        <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* Column 1: Heading */}
+          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
+            Our Numbers <br /> Speak For Us
+          </h1>
+
+          {/* Column 2: Grid (2 rows, 2 cols) */}
+          <div className="grid grid-cols-2 grid-rows-2 gap-6 text-left">
+            <div className="text-white p-4 rounded-lg text-center">
+              <h3 className="font-semibold text-6xl mb-4">8+</h3>
+              <p className="text-base font-medium">YEARS OF EXCELLENCE</p>
+            </div>
+
+            <div className="text-white p-4 rounded-lg text-center">
+              <h3 className="font-semibold text-6xl mb-4">25+</h3>
+              <p className="text-base ">ADVANCED DEGREE TUTORS</p>
+            </div>
+
+            <div className="text-white p-4 rounded-lg text-center">
+              <h3 className="font-semibold text-6xl mb-4">90+</h3>
+              <p className="text-base ">ACCREDITATIONS</p>
+            </div>
+
+            <div className="text-white p-4 rounded-lg text-center">
+              <h3 className="font-semibold text-6xl mb-4">200+</h3>
+              <p className="text-base ">ALUMNI</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8  bg-white">
+        <AutoCarousel />
       </section>
 
       <section className="py-16 px-24 bg-white">
+        <div className="flex items-center">
+          <Image
+            src={Imagery4.src}
+            alt="Icon"
+            width={100}
+            height={80}
+            className=" inline-block"
+          />
+          <h1 className="text-black text-4xl font-bold leading-none ">
+            Featured <span className="text-blue-950">News</span>
+          </h1>
+        </div>
+
+          <p className="text-gray-800 text-sm -mt-3">
+       Chrisland Schools has been dedicated to offering world-class education in a safe and nurturing environment since 1977.
+          </p>
+
+
+        <FeaturedNewsCard />
+      </section>
+
+      {/* <section className="py-16 px-24 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-semibold text-center">About Us</h2>
           <p className="mt-6 text-gray-700 leading-relaxed text-center">
             A brief description about your mission, values, or programs.
           </p>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

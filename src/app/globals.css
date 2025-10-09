@@ -4,10 +4,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
-
 @custom-variant dark (&:is(.dark *));
 @tailwind utilities;
+
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/autoplay';
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important; /* hides default arrow icons */
+}
 
 
 @layer base {
@@ -265,6 +272,7 @@ body {
 
   --sidebar-ring: oklch(0.556 0 0);
 }
+
 
 /* @layer base {
   * {
