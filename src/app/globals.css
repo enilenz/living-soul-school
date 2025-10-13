@@ -16,6 +16,9 @@
   display: none !important; /* hides default arrow icons */
 }
 
+html, body {
+  overflow-x: hidden;
+}
 
 @layer base {
   h1 {

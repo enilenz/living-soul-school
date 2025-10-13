@@ -14,12 +14,11 @@ export default function Footer() {
     <footer className="bg-black text-white py-10 flex flex-col items-center space-y-10">
       {/* First line */}
       <div className="flex flex-wrap justify-center gap-8 text-sm font-medium">
-        <Link href="/" className="hover:text-gray-400 transition">About Us</Link>
-        <Link href="/" className="hover:text-gray-400 transition">Admissions</Link>
-        <Link href="/" className="hover:text-gray-400 transition">Academics</Link>
-        <Link href="/" className="hover:text-gray-400 transition">FAQs</Link>
-        <Link href="/" className="hover:text-gray-400 transition">News</Link>
-        <Link href="/" className="hover:text-gray-400 transition">Careers</Link>
+        <Link href="/aboutus" className="hover:text-gray-400 transition">About Us</Link>
+        <Link href="/admissions" className="hover:text-gray-400 transition">Admissions</Link>
+        <Link href="/academics" className="hover:text-gray-400 transition">Academics</Link>
+        <Link href="/faq" className="hover:text-gray-400 transition">FAQs</Link>
+        <Link href="/newsandevents" className="hover:text-gray-400 transition">News</Link>
         <Link href="/codesandpolicies" className="hover:text-gray-400 transition">Policies</Link>
       </div>
 
@@ -60,8 +59,7 @@ export default function Footer() {
       </div>
 
    
-      {/* <div className="w-4/4 border-t border-gray-700"></div>
-      <p className="text-md text-white">© 2024 Gidi School</p> */}
+
         <div className="flex flex-col items-center w-full space-y-4">
     <div className="w-full border-t border-gray-700"></div>
     <p className="text-md text-white">© 2025 Living Soul Schools.</p>

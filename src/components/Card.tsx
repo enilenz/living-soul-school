@@ -14,10 +14,10 @@ export default function Card({
   textColor = "text-gray-800",
 }: CardProps) {
   return (
-    <div className="bg-white rounded-xl h-auto w-auto shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300  text-center">
+    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-transform duration-300 text-center w-[300px] sm:w-[230px] md:w-[280px]">
       {/* Image */}
-      <div className="p-2 pb-2">
-        <div className="relative h-[200px] w-[199px]">
+      <div className="p-3">
+        <div className="relative h-[120px] sm:h-[180px] w-full">
           <Image
             src={imageSrc}
             alt={description}
@@ -28,12 +28,13 @@ export default function Card({
       </div>
 
       {/* Divider */}
-      <div className="border-t border-gray-200" ></div>
+      <div className="border-t border-gray-200" />
 
       {/* Text */}
-      <div className="py-3">
-        
-        <p className={`text-lg font-bold ${textColor}`}>{description}</p>
+      <div className="py-4">
+        <p className={`text-lg sm:text-xl font-bold ${textColor}`}>
+          {description}
+        </p>
       </div>
     </div>
   );

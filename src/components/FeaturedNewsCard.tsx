@@ -9,7 +9,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css"; // ✅ keep only base CSS
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-// ❌ removed "swiper/css/navigation"
+
 
 import { featuredNewsData } from "@/utils/autocarousel";
 
@@ -26,44 +26,53 @@ export default function FeaturedNews() {
         </button>
       </div>
 
-      <Swiper
-        modules={[Navigation]}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
-        spaceBetween={30}
-        slidesPerView={4}
-        loop={false}
-        allowTouchMove={false}
-      >
-        {featuredNewsData.map((item, i) => (
-          <SwiperSlide key={i}>
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col mb-2 mx-auto w-72">
-              {/* Image */}
-              <div className="relative w-full h-60">
-                <Image
-                  src={item.src}
-                  alt={item.alt || "Featured News"}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+<Swiper
+  modules={[Navigation]}
+  navigation={{
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }}
+  spaceBetween={20}
+  loop={false}
+  grabCursor={true}
+  centeredSlides={false}
+  breakpoints={{
+    0: { slidesPerView: 1, spaceBetween: 16 }, // full-width on phones
+    640: { slidesPerView: 2, spaceBetween: 20 }, // two cards on tablets
+    1024: { slidesPerView: 3, spaceBetween: 24 }, // three on laptops
+    1280: { slidesPerView: 4, spaceBetween: 30 }, // four on desktops
+  }}
+  className="!overflow-hidden"
+>
+  {featuredNewsData.map((item, i) => (
+    <SwiperSlide key={i}>
+      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col mx-auto w-full max-w-sm">
+        {/* Image */}
+        <div className="relative w-full h-56 sm:h-60">
+          <Image
+            src={item.src}
+            alt={item.alt || "Featured News"}
+            fill
+            className="object-cover"
+          />
+        </div>
 
-              {/* Content */}
-              <div className="flex flex-col flex-1 p-4 justify-between">
-                <p className="text-gray-700 text-sm mb-4">{item.news}</p>
-                <Button
-                  variant="outline"
-                  className="w-full mx-auto text-black px-6 py-2"
-                >
-                  Read More
-                </Button>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        {/* Content */}
+        <div className="flex flex-col flex-1 p-4 justify-between">
+          <p className="text-gray-700 text-sm mb-4">{item.news}</p>
+          <Button
+            variant="outline"
+            className="w-full mx-auto text-black px-6 py-2"
+          >
+            Read More
+          </Button>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
+
     </section>
   );
 }
