@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import CodePolicies from "@/assets/CodeandPolicies.jpg";
 
@@ -160,9 +161,11 @@ export default function Home() {
             <p className="text-gray-700">
               Got unanswered questions? Download the full FAQ document for more...
             </p>
-            <Button className="px-6 md:px-8 text-white bg-blue-950 hover:bg-blue-900">
-              Download
-            </Button>
+      <Link href="/doc/FAQ.docx" target="_blank" download>
+        <Button className="px-6 md:px-8 text-white bg-blue-950 hover:bg-blue-900">
+          Download
+        </Button>
+      </Link>
           </div>
         </div>
       </section>

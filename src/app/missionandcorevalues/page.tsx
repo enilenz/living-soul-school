@@ -47,7 +47,7 @@ export default function Home() {
         {/* ===== Child Protection Policy ===== */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
-            COre Values
+            Core Values
           </h2>
           <p className="text-gray-700 leading-relaxed">
             The Child Protection Policy is a comprehensive framework designed to

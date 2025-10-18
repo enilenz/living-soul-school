@@ -77,43 +77,44 @@ export default function Home() {
       <section className="min-h-screen bg-gray-50 p-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* ===== News Section ===== */}
-          <div className="lg:col-span-3 space-y-8">
-            {newsData.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden"
-              >
-                {/* Image Container with padding */}
-                <div className="flex justify-center items-center p-4">
-                  <div className="relative w-[200px] h-[200px] flex-shrink-0">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      className="object-cover rounded-md"
-                    />
-                  </div>
-                </div>
+<div className="lg:col-span-3 space-y-8">
+  {newsData.map((item, idx) => (
+    <div
+      key={idx}
+      className="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden"
+    >
+      {/* Image Container with padding */}
+      <div className="flex justify-start md:justify-center items-center p-4">
+        <div className="relative w-[200px] h-[200px] flex-shrink-0">
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+      </div>
 
-                {/* Text Section */}
-                <div className="p-6 flex flex-col justify-between flex-1">
-                  <div>
-                    <h2 className="text-lg font-semibold text-gray-800">
-                      {item.title}
-                    </h2>
-                    <p className="mt-2 text-sm text-gray-600">
-                      {item.description}
-                    </p>
-                  </div>
-                  <p className="text-xs text-gray-400 mt-4">{item.date}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* Text Section */}
+      <div className="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <h2 className="text-lg font-semibold text-blue-950">
+            {item.title}
+          </h2>
+          <p className="mt-2 text-sm text-gray-600">
+            {item.description}
+          </p>
+        </div>
+        <p className="text-xs text-gray-400 mt-4">{item.date}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
           {/* ===== Events Section ===== */}
 <div className="bg-white shadow-md rounded-lg p-6 self-start w-full max-h-fit">
-  <h3 className="text-lg font-semibold text-gray-800 mb-6">
+  <h3 className="text-lg font-semibold text-blue-950 mb-6">
     Upcoming Events
   </h3>
   <ul className="space-y-2">
@@ -129,7 +130,7 @@ export default function Home() {
       </li>
     ))}
   </ul>
-</div>6
+</div>
         </div>
       </section>
     </div>

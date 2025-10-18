@@ -73,23 +73,13 @@ const schedules: Record<TabType, string[][]> = {
   return (
     <div className=""> 
 
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden ">
-        <div
-          className="absolute inset-0  bg-cover bg-center"
-          style={{ backgroundImage: `url(${Academics.src})` }}
-        />
-        <div className="absolute inset-0 bg-black/70" />
+<section className="relative h-[60vh] flex items-center justify-center overflow-hidden "> 
+  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage:`url(${Academics.src})` }} />
+   <div className="absolute inset-0 bg-black/70" /> 
+   <div className="relative z-10 text-white w-full max-w-7xl flex flex-col mx-auto px-8 gap-4"> 
+    <h1 className="text-5xl font-bold leading-tight"> Academics </h1> <p> At Living Soul Schools, we believe education goes beyond academics—it is about nurturing the whole child. From the Creche to Secondary School, we provide a seamless learning journey designed to develop intellectual ability, character, creativity, and confidence. Each stage is tailored to meet the needs of learners at their unique level, ensuring they grow into well-rounded individuals ready for a successful future. </p> 
+</div> </section>
 
-        <div className="relative z-10 text-white w-full max-w-7xl flex flex-col mx-auto px-8 gap-4">
-              <h1 className="text-5xl  font-bold leading-tight">
-                Academics
-              </h1>
-
-              <p>
-  At Living Soul Schools, we believe education goes beyond academics—it is about nurturing the whole child. From the Creche to Secondary School, we provide a seamless learning journey designed to develop intellectual ability, character, creativity, and confidence. Each stage is tailored to meet the needs of learners at their unique level, ensuring they grow into well-rounded individuals ready for a successful future.
-              </p>
-        </div>
-      </section>
 
 
     <div className="bg-white text-black">
@@ -161,59 +151,67 @@ const schedules: Record<TabType, string[][]> = {
       { title, firstParagraph, content, secondParagraph, image, reverse },
       idx
     ) => (
-      <div
-        key={idx}
-        className={`flex flex-col md:flex-row ${
-          reverse ? "md:flex-row-reverse" : ""
-        } items-center gap-8 md:gap-16`}
-      >
-        {/* Image */}
-        <div className="relative flex justify-center">
-          {/* Purple background div with conditional rotation */}
-          <div
-            className={`absolute w-[260px] h-[320px] rounded-xl bg-violet-300 shadow-md 
-              ${
-                reverse
-                  ? "rotate-[-8deg] -translate-y-2 -translate-x-7"
-                  : "rotate-[8deg] -translate-y-2 translate-x-7"
-              }`}
-          />
+<div
+  key={idx}
+  className={`flex flex-col md:flex-row ${
+    reverse ? "md:flex-row-reverse" : ""
+  } items-center gap-8 md:gap-16`}
+>
+  {/* Image */}
+  <div className="relative flex justify-center items-center">
+    {/* Purple background div */}
+    <div
+      className={`absolute 
+        w-[180px] h-[170px] sm:w-[230px] sm:h-[210px] md:w-[260px] md:h-[320px]
+        rounded-xl bg-violet-300 shadow-md
+        ${
+          reverse
+            ? "rotate-[-8deg] -translate-y-1 -translate-x-4 sm:-translate-x-6"
+            : "rotate-[8deg] -translate-y-1 translate-x-4 sm:translate-x-6"
+        }`}
+    />
 
-          {/* Foreground image */}
-          <div className="relative w-[250px] h-[220px] md:w-[290px] md:h-[310px] flex-shrink-0">
-            <Image
-              src={image}
-              alt={title}
-              fill
-              className="object-cover rounded-xl shadow-md"
-            />
-          </div>
-        </div>
+    {/* Foreground image */}
+    <div
+      className="
+        relative 
+        w-[180px] h-[170px] sm:w-[230px] sm:h-[210px] md:w-[290px] md:h-[310px]
+        flex-shrink-0 z-10
+      "
+    >
+      <Image
+        src={image}
+        alt={title}
+        fill
+        className="object-cover rounded-xl shadow-md"
+      />
+    </div>
+  </div>
 
-        {/* Text */}
-        <div className="space-y-3 md:space-y-4">
-          <h3 className="font-bold text-xl md:text-2xl text-blue-950">
-            {title}
-          </h3>
+  {/* Text */}
+  <div className="space-y-3 md:space-y-4 text-left">
+    <h3 className="font-bold text-xl md:text-2xl text-blue-950">
+      {title}
+    </h3>
 
-          {/* First Paragraph */}
-          <p className="text-sm md:text-base leading-relaxed">
-            {firstParagraph}
-          </p>
+    <p className="text-sm md:text-base leading-relaxed">
+      {firstParagraph}
+    </p>
 
-          {/* Bullet List */}
-          <ul className="list-disc list-inside space-y-6 marker:text-gray-600 text-sm md:text-base">
-            {content.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
+    <ul className="list-disc list-inside space-y-4 marker:text-gray-600 text-sm md:text-base">
+      {content.map((item, i) => (
+        <li key={i}>{item}</li>
+      ))}
+    </ul>
 
-          {/* Second Paragraph */}
-          <p className="text-sm md:text-base leading-relaxed">
-            {secondParagraph}
-          </p>
-        </div>
-      </div>
+    <p className="text-sm md:text-base leading-relaxed">
+      {secondParagraph}
+    </p>
+  </div>
+</div>
+
+
+
     )
   )}
 </section>

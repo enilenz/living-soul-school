@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* Our History */}
       <div className="grid md:grid-cols-2 gap-8 items-start max-w-6xl mx-auto">
-        <div className="w-full h-[300px] md:h-[400px] relative rounded-lg overflow-hidden shadow-md">
+        <div className="w-full h-[300px] md:h-[500px] relative rounded-lg overflow-hidden shadow-md">
           <Image
             src={LandingImage}
             alt="Living Soul Schools Building"
@@ -69,7 +69,7 @@ export default function Home() {
           <h4 className="text-blue-800 font-semibold text-sm uppercase mb-2">
             Our History
           </h4>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-blue-950 mb-4">
             The Story Of Living Soul Schools
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -99,7 +99,7 @@ export default function Home() {
 
       {/* Mission Section */}
       <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 mb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold text-blue-950 mb-4">
           Our Mission
         </h2>
         <p className="text-gray-700 leading-relaxed mb-4">
@@ -120,7 +120,7 @@ export default function Home() {
 
       {/* Core Values Section */}
       <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 mb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold text-blue-950 mb-4">
           Core Values
         </h2>
         <p className="text-gray-700 leading-relaxed mb-4">

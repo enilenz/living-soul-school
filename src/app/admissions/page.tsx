@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
 
-    <section className="bg-white text-black px-8 md:px-24 py-20 space-y-20">
+    <section className="bg-white text-black px-8 md:px-24 pt-20 space-y-20">
       {/* The 3 A's */}
       <div>
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -175,7 +175,7 @@ export default function Home() {
           </div>
         </div>
 
-        <button className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+        <button className="mt-8 px-6 py-2  bg-blue-950 text-white rounded-lg shadow hover:bg-blue-700 transition">
           Make Payment
         </button>
       </div>
@@ -197,7 +197,7 @@ export default function Home() {
         </p>
 
         <div className="flex justify-center">
-          <div className="relative w-[400px] h-[250px]">
+          <div className="relative w-[400px] h-[250px] md:w-[450px] md:h-[300px]">
             <Image
               src={Graduates}
               alt="Graduating Students"

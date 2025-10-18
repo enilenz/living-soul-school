@@ -26,7 +26,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
       {/* 🟦 HERO SECTION */}
       <section
-        className="relative min-h-[65vh] sm:min-h-[75vh] md:min-h-[90vh] flex items-center overflow-hidden"
+        className="relative min-h-[55vh] sm:min-h-[75vh] md:min-h-[90vh] flex items-center overflow-hidden"
         id="hero"
       >
         {/* Background */}
@@ -94,99 +94,109 @@ export default function Home() {
         />
       </section>
 
-      {/* 🟩 YOUR PATH SECTION */}
-      <section
-        className="pt-16 px-6 sm:px-10 lg:px-24 bg-white flex flex-col md:flex-row items-center justify-center gap-10"
-        id="yourpath"
-      >
-        {" "}
-        {/* Left */}
-        <div className="flex flex-col items-start text-left gap-y-4 md:w-1/2">
-          <div className="flex items-end">
-            {" "}
-            <Image
-              src={Imagery1.src}
-              alt="Icon"
-              width={80}
-              height={100}
-              className="mr-2"
-            />
-            <h1 className="text-black text-4xl sm:text-5xl font-bold leading-none">
-              {" "}
-              Your path to a{" "}
-            </h1>
-          </div>{" "}
-          <h1 className="text-blue-950 text-4xl sm:text-5xl font-bold leading-none">
-            {" "}
-            Bright Future!{" "}
+<section
+  className="
+    pt-16 px-6 sm:px-10 lg:px-24 bg-white 
+    flex flex-col md:flex-row md:items-center md:justify-center gap-10
+  "
+  id="yourpath"
+>
+  {/* Left */}
+  <div className="flex flex-col text-left gap-y-4 w-full md:w-1/2 items-start">
+    <div className="flex items-end">
+      <Image
+        src={Imagery1.src}
+        alt="Icon"
+        width={80}
+        height={100}
+        className="mr-2"
+      />
+      <h1 className="text-black text-4xl sm:text-5xl font-bold leading-none">
+        Your path to a
+      </h1>
+    </div>
+    <h1 className="text-blue-950 text-4xl sm:text-5xl font-bold leading-none">
+      Bright Future!
+    </h1>
+  </div>
+
+  {/* Right */}
+  <div
+    className="
+      flex flex-col sm:flex-row gap-5 
+      w-full md:w-1/2 justify-center md:justify-between 
+      items-center md:items-stretch
+    "
+  >
+    <Card
+      imageSrc={BrightFuture1.src}
+      description="Schedule A Visit"
+      textColor="text-blue-950"
+    />
+    <Card
+      imageSrc={BrightFuture2.src}
+      description="Academic Guide"
+      textColor="text-blue-600"
+    />
+    <Card
+      imageSrc={BrightFuture3.src}
+      description="Apply Today!"
+      textColor="text-green-500"
+    />
+  </div>
+</section>
+
+
+
+
+
+{/* 🟦 QUALITY & EXCELLENCE */}
+<section
+  className="pt-32 px-6 sm:px-12 md:px-24 bg-white"
+  id="qualityexcellence"
+>
+  <div className="flex flex-col-reverse md:flex-row gap-8">
+    {/* Left (Text) */}
+    <div className="w-full md:w-1/2 flex flex-col justify-center text-left">
+      <p className="mb-6 text-sm sm:text-base text-gray-700 leading-relaxed">
+        We are passionately devoted to the progress of humanity, achieved
+        through high-quality education, dedicated service, and unwavering
+        commitment. Our primary focus lies in illuminating the path
+        forward, while nourishing our endeavors with love. In this era of
+        heightened awareness, we firmly believe that a comprehensive
+        education holds the key to overcoming life&apos;s myriad
+        challenges. With the radiance of our knowledge and the warmth of
+        our compassion, we aspire to attain nothing less than the very
+        best.
+      </p>
+      <Button className="w-fit text-white bg-blue-950 px-8 py-3 hover:text-black">
+        Download E-Brochure
+      </Button>
+    </div>
+
+    {/* Right (Heading) */}
+    <div className="w-full md:w-1/2 flex items-center md:justify-center justify-start">
+      <div className="flex flex-col text-left gap-y-4">
+        <div className="flex items-end">
+          <h1 className="text-black text-5xl md:text-6xl font-bold leading-none">
+            Quality
           </h1>
-        </div>{" "}
-        {/* Right */}{" "}
-        <div className="flex flex-col sm:flex-row gap-5 md:w-1/2">
-          <Card
-            imageSrc={BrightFuture1.src}
-            description="Schedule A Visit"
-            textColor="text-blue-950"
+          <Image
+            src={Imagery2.src}
+            alt="Icon"
+            width={120}
+            height={160}
+            className="ml-2"
           />
-          <Card
-            imageSrc={BrightFuture2.src}
-            description="Academic Guide"
-            textColor="text-blue-600"
-          />
-          <Card
-            imageSrc={BrightFuture3.src}
-            description="Apply Today!"
-            textColor="text-green-500"
-          />{" "}
-        </div>{" "}
-      </section>
-
-      {/* 🟦 QUALITY & EXCELLENCE */}
-      <section
-        className="pt-32 px-6 sm:px-12 md:px-24 bg-white"
-        id="qualityexcellence"
-      >
-        <div className="flex flex-col-reverse md:flex-row gap-8">
-          {/* Left (Text) */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center">
-            <p className="mb-6 text-sm sm:text-base text-gray-700 leading-relaxed">
-              We are passionately devoted to the progress of humanity, achieved
-              through high-quality education, dedicated service, and unwavering
-              commitment. Our primary focus lies in illuminating the path
-              forward, while nourishing our endeavors with love. In this era of
-              heightened awareness, we firmly believe that a comprehensive
-              education holds the key to overcoming life&apos;s myriad
-              challenges. With the radiance of our knowledge and the warmth of
-              our compassion, we aspire to attain nothing less than the very
-              best.
-            </p>
-            <Button className="w-fit text-white bg-blue-950 px-8 py-3 hover:text-black">
-              Download E-Brochure
-            </Button>
-          </div>
-
-          {/* Right (Heading) */}
-          <div className="w-full md:w-1/2 flex items-center justify-center">
-            <div className="flex flex-col text-left gap-y-4">
-              <div className="flex items-end">
-                <h1 className="text-black text-5xl md:text-6xl font-bold leading-none">
-                  Quality
-                </h1>
-                <Image
-                  src={Imagery2.src}
-                  alt="Icon"
-                  width={100}
-                  height={140}
-                  className="ml-2"
-                />
-              </div>
-              <h1 className="text-blue-950 text-5xl md:text-6xl font-bold leading-none self-end">
-                Excellence
-              </h1>
-            </div>
-          </div>
         </div>
-      </section>
+        <h1 className="text-blue-950 text-5xl md:text-6xl font-bold leading-none">
+          Excellence
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* 🟨 STORY & GOVERNANCE */}
       <section
@@ -256,25 +266,34 @@ export default function Home() {
         <AutoCarousel />
       </section>
 
+   
+
       <section className="py-16 px-6 sm:px-12 md:px-24 bg-white">
-        <div className="flex items-center justify-center md:justify-start mb-4">
-          <Image
-            src={Imagery4.src}
-            alt="Icon"
-            width={80}
-            height={60}
-            className="mr-2"
-          />
-          <h1 className="text-3xl sm:text-4xl font-bold">
-            Featured <span className="text-blue-950">News</span>
-          </h1>
-        </div>
-        <p className="text-gray-800 text-sm sm:text-base mb-6">
-          Chrisland Schools has been dedicated to offering world-class education
-          in a safe and nurturing environment since 1977.
-        </p>
-        <FeaturedNewsCard />
-      </section>
+  <div className="flex flex-col items-start text-left mb-4">
+    <div className="flex items-center">
+      <Image
+        src={Imagery4.src}
+        alt="Icon"
+        width={80}
+        height={60}
+        className="mr-2"
+      />
+      <h1 className="text-3xl sm:text-4xl font-bold">
+        Featured <span className="text-blue-950">News</span>
+      </h1>
+    </div>
+  </div>
+
+  <p className="text-gray-800 text-sm sm:text-base mb-6 text-left">
+    Chrisland Schools has been dedicated to offering world-class education
+    in a safe and nurturing environment since 1977.
+  </p>
+
+  <FeaturedNewsCard />
+</section>
+
+
+
     </div>
   );
 }
