@@ -1,27 +1,33 @@
 [
   {
-    "title": "Founders Note",
-    "description": "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."
+    "id": "foundersnote",
+    "title": "Founder's Note",
+    "description": "When I founded Living Souls Schools on 19 September 2016, my vision was both simple and profound to create a learning environment where every child is seen, nurtured"
   },
   {
+    "id": "directorssnote",
     "title": "Managing Director's Note",
-    "description": "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."
+    "description": "At Living Souls Schools, our guiding philosophy is rooted in the belief that education is not merely about academic achievement, but about transforming lives"
   },
   {
+    "id": "aboutus",
     "title": "About Us",
-    "description": "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."
+    "description": "Living Soul Schools is an organization with the dedication, expertise and resources to make a difference through education. We are committed to giving adequate attention to"
   },
   {
+    "id": "registar",
     "title": "Registar's Office",
-    "description": "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."
+    "description": "The Registrar’s Office at Living Souls Schools serves as the central point of contact for all student admissions, enrollment, and academic record management."
   },
   {
+    "id": "calendar",
     "title": "Calendar",
-    "description": "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."
+    "description": " At Living Souls Schools, every academic year is thoughtfully structured to balance learning, creativity, discipline, and personal development."
   },
   {
+    "id": "parents",
     "title": "For The Parents",
-    "description": "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."
+    "description": "At Living Souls Schools, we believe that education is a shared journey, one built on partnership, trust, and mutual commitment."
   }
 ]
 

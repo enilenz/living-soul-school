@@ -16,9 +16,19 @@
   display: none !important; /* hides default arrow icons */
 }
 
-html, body {
+/* html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   overflow-x: hidden;
 }
+
 
 @layer base {
   h1 {
@@ -34,7 +44,9 @@ html, body {
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Product Sans', 'Helvetica Neue', sans-serif;
+    
+    font-family: 'Product Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   }
 }
 

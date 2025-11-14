@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -22,9 +22,84 @@ import Logo from "@/assets/Logo.png";
 import MenuBlack from "@/assets/Menu-Icon-Black.png";
 
 export default function Navbar() {
-  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // const scrollToFooter = () => {
+  //   const footer = document.getElementById("footer");
+
+  //   if (footer) {
+  //     footer.scrollIntoView({ behavior: "smooth" });
+  //   } else {
+  //     if (pathname !== "/") {
+  //       router.push("/");
+
+  //       // Poll until footer exists
+  //       const interval = setInterval(() => {
+  //         const f = document.getElementById("footer");
+  //         if (f) {
+  //           f.scrollIntoView({ behavior: "smooth" });
+  //           clearInterval(interval);
+  //         }
+  //       }, 50);
+  //     } else {
+  //       // Already on homepage, wait for footer to render
+  //       const interval = setInterval(() => {
+  //         const f = document.getElementById("footer");
+  //         if (f) {
+  //           f.scrollIntoView({ behavior: "smooth" });
+  //           clearInterval(interval);
+  //         }
+  //       }, 50);
+  //     }
+  //   }
+  // };
+
+  // inside Navbar component
+const scrollToFooter = () => {
+  // close mobile menu immediately so overlay doesn't block the view
+  setIsMenuOpen(false);
+
+  // give the DOM one small frame/tick so the overlay can disappear
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      const footer = document.getElementById("footer");
+
+      if (footer) {
+        footer.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+
+      // if footer not present on this page, navigate to home and poll
+      if (pathname !== "/") {
+        router.push("/");
+
+        // poll until footer exists, then scroll and stop polling
+        const interval = setInterval(() => {
+          const f = document.getElementById("footer");
+          if (f) {
+            f.scrollIntoView({ behavior: "smooth" });
+            clearInterval(interval);
+          }
+        }, 60);
+      } else {
+        // already on homepage but footer still not in DOM (hydration/time)
+        const interval = setInterval(() => {
+          const f = document.getElementById("footer");
+          if (f) {
+            f.scrollIntoView({ behavior: "smooth" });
+            clearInterval(interval);
+          }
+        }, 60);
+      }
+    }, 40); // small delay so overlay/styling transitions finish
+  });
+};
+
+
 
   return (
     <>
@@ -70,9 +145,7 @@ export default function Navbar() {
                   About Us
                 </NavigationMenuTrigger>
 
-                <NavigationMenuContent
-                  className="bg-white border border-gray-200 rounded-md shadow-md py-3 whitespace-nowrap"
-                >
+                <NavigationMenuContent className="bg-white border border-gray-200 rounded-md shadow-md py-3 whitespace-nowrap">
                   <ul className="flex flex-col text-sm text-black">
                     <li>
                       <NavigationMenuLink asChild>
@@ -84,7 +157,10 @@ export default function Navbar() {
                     <DropdownMenuSeparator />
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/ourfacilities" className="hover:text-gray-600">
+                        <Link
+                          href="/ourfacilities"
+                          className="hover:text-gray-600"
+                        >
                           Our Facilities
                         </Link>
                       </NavigationMenuLink>
@@ -92,7 +168,10 @@ export default function Navbar() {
                     <DropdownMenuSeparator />
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/ourgallery" className="hover:text-gray-600">
+                        <Link
+                          href="/ourgallery"
+                          className="hover:text-gray-600"
+                        >
                           Our Gallery
                         </Link>
                       </NavigationMenuLink>
@@ -100,7 +179,10 @@ export default function Navbar() {
                     <DropdownMenuSeparator />
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/ourhistory" className="hover:text-gray-600">
+                        <Link
+                          href="/ourhistory"
+                          className="hover:text-gray-600"
+                        >
                           Our History
                         </Link>
                       </NavigationMenuLink>
@@ -143,6 +225,7 @@ export default function Navbar() {
 
         {/* Desktop Contact Button */}
         <Button
+        onClick={scrollToFooter}
           className="hidden md:flex px-4 md:px-8 text-white bg-blue-950"
           variant="outline"
         >
@@ -175,8 +258,6 @@ export default function Navbar() {
           role="dialog"
           aria-modal="true"
         >
-     
-
           <Link href="/" className="w-full py-3 border-b hover:text-gray-600">
             Home
           </Link>
@@ -232,12 +313,14 @@ export default function Navbar() {
           </Link>
 
           <div className="w-full mt-8">
-            <Link
-              href="/contact"
+
+            <button
+            
+              onClick={scrollToFooter}
               className="block w-full text-center bg-blue-950 text-white py-4 rounded-md text-lg"
             >
               Contact Us
-            </Link>
+            </button>
           </div>
         </div>
       )}

@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import Image from "next/image";
 import CodePolicies from "@/assets/CodeandPolicies.jpg";
 
@@ -63,7 +66,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 text-white w-full max-w-7xl flex flex-col mx-auto px-8 gap-4">
-          <h1 className="text-5xl font-bold leading-tight">Codes & Policies</h1>
+          <h1 className="text-5xl font-bold leading-tight">News & Events</h1>
           <p>
             We understand just how important it is for parents to choose the
             right school for their child. The process outlined below is typical

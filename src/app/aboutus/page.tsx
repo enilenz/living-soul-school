@@ -55,7 +55,7 @@ export default function Home() {
 
         {/* Paragraphs */}
         <p className="text-sm sm:text-base md:text-lg text-left leading-relaxed">
-          Edidot Schools is an organization with the dedication, expertise and
+          Living Soul Schools is an organization with the dedication, expertise and
           resources to make a difference through education. We are committed to
           giving adequate attention to moral education, spiritual value, social
           and a sound academic life.
@@ -93,7 +93,7 @@ export default function Home() {
       <p className="text-sm sm:text-base md:text-lg leading-relaxed">
         We place an importance on technology which has kept us at the forefront
         of education. These technological tools aid student learning and enhance
-        teachers productivity by compiling information on every aspect of Edidot
+        teachers productivity by compiling information on every aspect of Living Soul
         school life, including attendance, discipline, examination and grades
         among others.
       </p>
@@ -103,6 +103,121 @@ export default function Home() {
         potential and make a difference in the world.
       </p>
     </div>
+  </div>
+</section>
+
+
+<section
+  id="aboutus"
+  className="px-8 md:px-24 py-20 bg-white text-blue-950 scroll-mt-24 space-y-10"
+>
+  {/* Header + First Paragraph */}
+  <div className="text-left max-w-5xl">
+    <h2 className="text-2xl md:text-3xl font-bold text-black">Welcome to Living Soul Schools!</h2>
+    <p className="mt-2 text-base md:text-lg text-gray-700 leading-relaxed">
+      Living Souls Schools (LSS) is a distinguished educational institution
+      dedicated to shaping exceptional minds and nurturing well-rounded
+      individuals. Established on the values of <strong>excellence</strong>,{" "}
+      <strong>integrity</strong>, and <strong>purpose</strong>, LSS stands as a
+      beacon of transformative learning — where intellectual curiosity meets
+      moral strength, and every learner is empowered to thrive.
+    </p>
+  </div>
+
+  {/* Body Content */}
+  <div className="text-base md:text-lg space-y-6 text-gray-700 leading-relaxed max-w-5xl">
+    <p>
+      At Living Souls Schools, we transcend academics. Our philosophy is rooted
+      in the conviction that every child is a <em>living soul</em> — unique,
+      gifted, and capable of greatness. We are committed to cultivating these
+      gifts through a holistic approach that blends academic mastery, moral
+      discipline, spiritual grounding, and leadership development.
+    </p>
+
+    <p>
+      Our academic framework is world-class, comprehensive, dynamic, and
+      globally relevant. We offer a hybrid curriculum that harmoniously
+      integrates the Nigerian standard with select elements of the British and
+      American systems, ensuring that our students are equipped with the
+      intellectual versatility and global perspective required to excel in any
+      environment.
+    </p>
+
+    <p>
+      Innovation is central to the LSS learning experience. Our classrooms are
+      powered by technology and guided by passionate educators who inspire
+      excellence through creativity, collaboration, and critical thinking. From
+      digital learning tools to performance analytics, we leverage modern
+      resources to enhance both teaching efficiency and student engagement.
+    </p>
+
+    <p>
+      Beyond academics, we focus on building character and leadership. Our
+      extensive co-curricular and enrichment programs encourage confidence,
+      empathy, and a sense of responsibility, preparing our students not just
+      for success in examinations, but for distinction in life.
+    </p>
+
+    <p>
+      At Living Souls Schools, we take pride in our team of highly qualified,
+      passionate, and professional teachers who embody our values and bring
+      learning to life with care, creativity, and dedication. Guided by our
+      visionary Principal and management team, our educators serve as mentors,
+      role models, and partners in the holistic growth of every child. We are
+      more than an academic institution; we are a community of purpose to raise
+      a generation of confident, visionary, and God-centered leaders who will
+      make a lasting impact on their world.
+    </p>
+  </div>
+
+  {/* Core Values */}
+  <div className="pt-10 border-t border-gray-300 max-w-5xl">
+    <h3 className="text-2xl md:text-2xl font-bold text-black mb-6">
+      Our Core Values
+    </h3>
+
+    <div className="space-y-4 text-gray-700">
+      <p>
+        <strong>Integrity:</strong> We uphold honesty, discipline, and moral
+        strength in all we do.
+      </p>
+      <p>
+        <strong>Excellence:</strong> We pursue the highest standards in
+        learning, teaching, and leadership.
+      </p>
+      <p>
+        <strong>Creativity:</strong> We inspire innovation and imagination in
+        our students and staff.
+      </p>
+      <p>
+        <strong>Respect:</strong> We value each individual and celebrate
+        diversity and empathy.
+      </p>
+      <p>
+        <strong>Service:</strong> We encourage compassion, community service,
+        and responsibility.
+      </p>
+      <p>
+        <strong>Faith:</strong> We build a God-centered foundation for life and
+        purpose.
+      </p>
+    </div>
+  </div>
+
+  {/* Closing Statement */}
+  <div className="max-w-5xl">
+    <p className="text-gray-700 leading-relaxed">
+      At Living Souls Schools, we are more than an institution; we are a family
+      united by purpose, values, and a shared passion for nurturing young minds.
+      Every day, we strive to create a warm, disciplined, and inspiring
+      atmosphere where excellence is a culture, creativity is celebrated, and
+      character is built for life.
+    </p>
+
+    <p className="mt-4 font-semibold text-blue-950 text-lg">
+      Welcome to Living Souls Schools, a home of excellence, integrity, and
+      light.
+    </p>
   </div>
 </section>
 

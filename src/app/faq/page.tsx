@@ -84,13 +84,13 @@ export default function Home() {
       "Applications can be made directly through the school’s administrative office or via our official social media platforms."
     ]
   },
-  {
-    "value": "item-5",
-    "title": "What is the eligible age for admission (Day and Boarding)?",
-    "content": [
-      "Day students are admitted from age 2 upwards. Boarding is available from age 10."
-    ]
-  },
+  // {
+  //   "value": "item-5",
+  //   "title": "What is the eligible age for admission (Day and Boarding)?",
+  //   "content": [
+  //     "Day students are admitted from age 2 upwards. Boarding is available from age 10."
+  //   ]
+  // },
   {
     "value": "item-6",
     "title": "How do I obtain the admission/application form, and what is the cost?",
@@ -161,7 +161,7 @@ export default function Home() {
             <p className="text-gray-700">
               Got unanswered questions? Download the full FAQ document for more...
             </p>
-      <Link href="/doc/FAQ.docx" target="_blank" download>
+      <Link href="/doc/faq.docx" target="_blank" download>
         <Button className="px-6 md:px-8 text-white bg-blue-950 hover:bg-blue-900">
           Download
         </Button>

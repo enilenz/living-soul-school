@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Card from "@/components/Card";
 import ReadMoreCard from "@/components/ReadMoreCard";
@@ -85,14 +86,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🟨 VIDEO SECTION */}
-      <section className="bg-white flex justify-center pt-12 sm:pt-16">
+ 
+      {/* <section className="bg-white flex justify-center pt-12 sm:pt-16">
         <Image
           src={VideoPlayer}
           alt="Video Player"
           className="w-[90%] sm:w-auto max-w-3xl"
         />
-      </section>
+      </section> */}
+
+      {/* ✨ INSPIRATIONAL SECTION */}
+<section className="relative py-24 bg-blue-900 text-white text-center ">
+  <div className="absolute inset-0 bg-[url('/your-campus-photo.jpg')] bg-cover bg-center opacity-20" />
+  <div className="relative max-w-3xl mx-auto px-6">
+    <h2 className="text-3xl md:text-4xl font-bold mb-6">“Education is the most powerful tool for shaping tomorrow’s leaders.”</h2>
+    <p className="text-lg text-gray-100">
+      At Living Souls Schools, we don’t just teach — we inspire excellence, character, and purpose in our students.
+    </p>
+  </div>
+</section>
+
 
 <section
   className="
@@ -128,21 +141,30 @@ export default function Home() {
       items-center md:items-stretch
     "
   >
+ 
+  
+
     <Card
       imageSrc={BrightFuture1.src}
-      description="Schedule A Visit"
+      description="Amazing Facilities"
       textColor="text-blue-950"
+      
     />
+
     <Card
       imageSrc={BrightFuture2.src}
-      description="Academic Guide"
+      description="Academic Guides"
       textColor="text-blue-600"
+     
     />
+   
     <Card
       imageSrc={BrightFuture3.src}
-      description="Apply Today!"
+      description="Nuturing Environment"
       textColor="text-green-500"
+      
     />
+   
   </div>
 </section>
 
@@ -169,9 +191,14 @@ export default function Home() {
         our compassion, we aspire to attain nothing less than the very
         best.
       </p>
-      <Button className="w-fit text-white bg-blue-950 px-8 py-3 hover:text-black">
-        Download E-Brochure
-      </Button>
+      {/* <Button className="w-fit text-white bg-blue-950 px-8 py-3 hover:text-black">
+        More About Us
+      </Button> */}
+      <Link href="/aboutus">
+  <Button className="w-fit text-white bg-blue-950 px-8 py-3 hover:text-black">
+    More About Us
+  </Button>
+</Link>
     </div>
 
     {/* Right (Heading) */}
@@ -225,6 +252,7 @@ export default function Home() {
           {governanceJson.map((card, index) => (
             <ReadMoreCard
               key={index}
+              id={card.id}
               title={card.title}
               description={card.description}
             />
@@ -285,7 +313,7 @@ export default function Home() {
   </div>
 
   <p className="text-gray-800 text-sm sm:text-base mb-6 text-left">
-    Chrisland Schools has been dedicated to offering world-class education
+    Living Soul Schools has been dedicated to offering world-class education
     in a safe and nurturing environment since 1977.
   </p>
 

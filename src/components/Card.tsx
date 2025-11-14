@@ -1,53 +1,3 @@
-// "use client";
-
-// import Image from "next/image";
-
-// interface CardProps {
-//   imageSrc: string;
-//   description: string;
-//   textColor?: string;
-// }
-
-// export default function Card({
-//   imageSrc,
-//   description,
-//   textColor = "text-gray-800",
-// }: CardProps) {
-//   return (
-//     <div
-//       className="
-//         bg-white rounded-2xl shadow-md overflow-hidden 
-//         hover:shadow-xl hover:scale-105 transition-transform duration-300 
-//         text-center flex flex-col
-//         w-[300px] sm:w-[260px] md:w-[280px] lg:w-[300px]
-//         h-[340px] sm:h-[340px] md:h-[360px] /* 🔹 consistent height across cards */
-//       "
-//     >
-//       {/* Image */}
-//       <div className="p-3 flex-grow">
-//         <div className="relative h-[180px] w-full">
-//           <Image
-//             src={imageSrc}
-//             alt={description}
-//             fill
-//             className="object-cover rounded-xl"
-//           />
-//         </div>
-//       </div>
-
-//       {/* Divider */}
-//       <div className="border-t border-gray-200" />
-
-//       {/* Text */}
-//       <div className="py-4">
-//         <p className={`text-lg sm:text-xl font-bold ${textColor}`}>
-//           {description}
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
-
 "use client";
 
 import Image from "next/image";
@@ -96,4 +46,6 @@ export default function Card({
     </div>
   );
 }
+
+
 

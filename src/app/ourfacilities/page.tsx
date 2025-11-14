@@ -56,6 +56,52 @@ export default function Home() {
 
 
 
+<section
+  id="facilities"
+  className="scroll-mt-24 py-12 px-6 md:px-24 bg-white"
+>
+  {/* Section Header */}
+  <h2 className="text-2xl md:text-3xl font-bold text-blue-950 mb-6">
+    Our School Facilities
+  </h2>
+
+  {/* Body Text */}
+  <div className="space-y-5 text-gray-700 text-sm md:text-base leading-relaxed">
+    <p>
+      Living Souls Schools is equipped with modern, safe, and child-friendly facilities designed to
+      support effective learning across all levels: Nursery, Primary, and Secondary.
+    </p>
+
+    <p>
+      Our <span className="font-semibold">Nursery Section</span> offers a warm, stimulating
+      environment with colorful classrooms, age-appropriate learning materials, and creative play
+      zones that encourage early discovery and development.
+    </p>
+
+    <p>
+      The <span className="font-semibold">Primary Section</span> features well-structured classrooms,
+      digital learning aids, and resource centers that build strong academic foundations while
+      fostering curiosity, discipline, and teamwork.
+    </p>
+
+    <p>
+      Our <span className="font-semibold">Secondary Section</span> provides advanced learning spaces,
+      well-equipped science and computer laboratories, a modern library, art and music studios, and
+      sports facilities, preparing students for higher education and real-world challenges.
+    </p>
+
+    <p>
+      Across all sections, we maintain high standards of cleanliness, safety, and technology
+      integration, ensuring a conducive atmosphere for excellence, innovation, and growth.
+    </p>
+  </div>
+</section>
+
+
+
+
+
+
 
           <section className="bg-white py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
