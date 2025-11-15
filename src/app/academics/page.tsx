@@ -37,33 +37,47 @@ const [activeTab, setActiveTab] = useState<TabType>("Cretche");
 
 const schedules: Record<TabType, string[][]> = {
   Cretche: [
-      ["08:00 - 08:15", "Registration"],
-      ["08:15 - 09:15", "Lesson 1"],
-      ["09:15 - 10:15", "Lesson 2"],
-      ["10:15 - 11:15", "Lesson 3"],
-      ["11:15 - 12:15", "Lunch Hour"],
-      ["12:15 - 01:15", "Lesson 4"],
-      ["01:15 - 02:00", "Co-curricular activities"],
+      ["07:50 - 08:15", "Registration"],
+      ["08:15 - 08:55", "Lesson 1"],
+      ["08:55 - 09:35", "Lesson 2"],
+      ["09:35 - 10:15", "Lesson 3"],
+      ["10:15 - 10:25", "Short Break"],
+      ["10:25 - 11:05", "Lesson 4"],
+      ["11:05 - 11:45", "Lesson 5"],
+      ["11:45 - 12:15", "Long Break"],
+      ["12:15 - 12:55", "Lesson 6"],
+      ["12:55 - 01:35", "Lesson 7"],
+      ["01:35 - 02:15", "Lesson 8"],
+      ["02:15 - 02:55", "Lesson 9"],
+     
   ],
   Primary: [
-      ["08:00 - 08:15", "Assembly"],
-      ["08:15 - 09:15", "Lesson 1"],
-      ["09:15 - 10:15", "Lesson 2"],
-      ["10:15 - 11:15", "Lesson 3"],
-      ["11:15 - 11:45", "Break"],
-      ["11:45 - 12:45", "Lesson 4"],
-      ["12:45 - 01:30", "Lunch"],
-      ["01:30 - 02:30", "Lesson 5"],
+      ["07:50 - 08:15", "Registration"],
+      ["08:15 - 08:55", "Lesson 1"],
+      ["08:55 - 09:35", "Lesson 2"],
+      ["09:35 - 10:15", "Lesson 3"],
+      ["10:15 - 10:25", "Short Break"],
+      ["10:25 - 11:05", "Lesson 4"],
+      ["11:05 - 11:45", "Lesson 5"],
+      ["11:45 - 12:15", "Long Break"],
+      ["12:15 - 12:55", "Lesson 6"],
+      ["12:55 - 01:35", "Lesson 7"],
+      ["01:35 - 02:15", "Lesson 8"],
+      ["02:15 - 02:55", "Lesson 9"],
   ],
   Secondary: [
-      ["08:00 - 08:15", "Assembly"],
-      ["08:15 - 09:15", "Lesson 1"],
-      ["09:15 - 10:15", "Lesson 2"],
-      ["10:15 - 11:15", "Lesson 3"],
-      ["11:15 - 11:45", "Break"],
-      ["11:45 - 12:45", "Lesson 4"],
-      ["12:45 - 01:30", "Lunch"],
-      ["01:30 - 02:30", "Lesson 5"],
+      ["07:50 - 08:15", "Registration"],
+      ["08:15 - 08:55", "Lesson 1"],
+      ["08:55 - 09:35", "Lesson 2"],
+      ["09:35 - 10:15", "Lesson 3"],
+      ["10:15 - 10:25", "Short Break"],
+      ["10:25 - 11:05", "Lesson 4"],
+      ["11:05 - 11:45", "Lesson 5"],
+      ["11:45 - 12:15", "Long Break"],
+      ["12:15 - 12:55", "Lesson 6"],
+      ["12:55 - 01:35", "Lesson 7"],
+      ["01:35 - 02:15", "Lesson 8"],
+      ["02:15 - 02:55", "Lesson 9"],
   ]
 };
 
@@ -280,13 +294,13 @@ const schedules: Record<TabType, string[][]> = {
   <div className="space-y-4 mb-10 text-sm md:text-base  leading-relaxed">
 
     <p>
-The school is open from Monday to Friday from 7:30 a.m. for students and lessons end at 2.35 p.m. Co-curricular activities take place between 2.45 p.m. and 3.45 p.m. each day. Students should be picked up at the end of their school day.
+The school is open from Monday to Friday from 7:30 a.m. Closing time from Monday to Thursday is 3pm while on Friday is 1pm. each day. Students should be picked up at the end of their school day.
     </p>
     <p>
 We operate a ten day timetable across a two weeks (A and B).
     </p>
     <p>
-The organisation of a typical day at BIS is as follows:
+The organisation of a typical day at LSS is as follows:
     </p>
   </div>
 

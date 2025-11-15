@@ -35,10 +35,7 @@ export default function Home() {
             Frequently Asked Questions
           </h1>
           <p>
-            We understand just how important it is for parents to choose the
-            right school for their child. The process outlined below is typical
-            but can be adapted to ensure that you and your child are supported
-            every step of the way.
+Find clear answers to the most common questions from parents, students, and visitors. This section is designed to give you quick, reliable information that helps you navigate our school with confidence.
           </p>
         </div>
       </section>

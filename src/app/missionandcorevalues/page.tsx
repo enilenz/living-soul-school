@@ -19,10 +19,7 @@ export default function Home() {
           </h1>
 
           <p>
-            We understand just how important it is for parents to choose the
-            right school for their child. The process outlined below is typical
-            but can be adapted to ensure that you and your child are supported
-            every step of the way.{" "}
+Our mission shapes every step we take toward nurturing confident, responsible, and well-rounded learners. Guided by strong values, we strive to build character, inspire curiosity, and empower every child to succeed.
           </p>
         </div>
       </section>
@@ -32,15 +29,7 @@ export default function Home() {
         <div>
           <h2 className="text-2xl md:text-4xl font-bold mb-3">Our Mission</h2>
           <p className="text-gray-700 leading-relaxed">
-            The School Policy serves as a guiding document that outlines the
-            rules, regulations, and expectations for students, staff, and
-            parents within all school premises, including creche, nursery,
-            primary, secondary, and pre-degree Christened Schools. This
-            comprehensive Policy promotes clarity and consistency in matters
-            pertaining to academic performance, behavior, attendance, health and
-            safety, discipline, and overall school culture. The policy is
-            designed to sustain a positive and conducive learning environment
-            that fosters the holistic development of students.
+    To identify, develop, and nurture all the child&apos;s inherent talents, thereby giving them a solid foundation to grow in the profession they are passionate about, becoming relevant in society and the world at large.
           </p>
         </div>
 
@@ -50,13 +39,7 @@ export default function Home() {
             Core Values
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            The Child Protection Policy is a comprehensive framework designed to
-            ensure the safety, well-being, and protection of children within all
-            school premises, including creche, nursery, primary, secondary, and
-            pre-degree Christened Schools. This policy outlines the guidelines,
-            procedures, and responsibilities that the administration, staff,
-            caregivers, and students must adhere to in order to create a secure
-            and nurturing environment for all children.
+   To engage in a long-term investment, creating well-educated people who will embody skills, integrity, honesty, knowledge, creativity, confidence, excellence, and godly values.
           </p>
         </div>
       </section>

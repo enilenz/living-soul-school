@@ -18,10 +18,7 @@ export default function Home() {
           </h1>
 
           <p>
-            We understand just how important it is for parents to choose the
-            right school for their child. The process outlined below is typical
-            but can be adapted to ensure that you and your child are supported
-            every step of the way.{" "}
+          Our policies are built to create a safe, fair, and supportive environment for every student and staff member. They reflect our commitment to consistency, transparency, and the well-being of the entire school community.
           </p>
         </div>
       </section>
@@ -31,15 +28,9 @@ export default function Home() {
         <div>
           <h2 className="text-2xl md:text-4xl font-bold mb-3">School Policy</h2>
           <p className="text-gray-700 leading-relaxed">
-            The School Policy serves as a guiding document that outlines the
-            rules, regulations, and expectations for students, staff, and
-            parents within all school premises, including creche, nursery,
-            primary, secondary, and pre-degree Christened Schools. This
-            comprehensive Policy promotes clarity and consistency in matters
-            pertaining to academic performance, behavior, attendance, health and
-            safety, discipline, and overall school culture. The policy is
-            designed to sustain a positive and conducive learning environment
-            that fosters the holistic development of students.
+   The Living Soul Schools (LSS) School Policy provides a clear and unified framework that guides behaviour, expectations, and responsibilities across all levels of the institution, Crèche, Nursery, Primary, and Secondary. It outlines the standards that students, staff, and parents are expected to uphold in areas such as academics, attendance, conduct, health and safety, discipline, and overall school culture.
+ This Policy ensures consistency, fairness, and accountability while supporting Living Souls Schools’ commitment to excellence and value-driven education. It is designed to maintain a positive, structured, and conducive learning environment where every child can grow intellectually, socially, emotionally, and morally.
+
           </p>
         </div>
 
@@ -49,13 +40,10 @@ export default function Home() {
             Child Protection Policy
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            The Child Protection Policy is a comprehensive framework designed to
-            ensure the safety, well-being, and protection of children within all
-            school premises, including creche, nursery, primary, secondary, and
-            pre-degree Christened Schools. This policy outlines the guidelines,
-            procedures, and responsibilities that the administration, staff,
-            caregivers, and students must adhere to in order to create a secure
-            and nurturing environment for all children.
+The Living Soul Schools Child Protection Policy establishes the guidelines and procedures necessary to safeguard every child in our care across the Crèche, Nursery, Primary, and Secondary sections. This policy reinforces the school’s unwavering commitment to creating a safe, secure, and nurturing environment for all learners.
+ It defines the roles and responsibilities of administrators, teachers, caregivers, support staff, parents, and students in identifying, preventing, and responding to any form of harm, abuse, or neglect.
+ Through continuous awareness, vigilance, and adherence to established protocols, Living Souls Schools ensures that the well-being, dignity, and rights of every child remain protected and prioritised at all times.
+
           </p>
         </div>
       </section>

@@ -68,10 +68,7 @@ export default function Home() {
         <div className="relative z-10 text-white w-full max-w-7xl flex flex-col mx-auto px-8 gap-4">
           <h1 className="text-5xl font-bold leading-tight">News & Events</h1>
           <p>
-            We understand just how important it is for parents to choose the
-            right school for their child. The process outlined below is typical
-            but can be adapted to ensure that you and your child are supported
-            every step of the way.
+Stay connected with the moments that shape our school community. From academic milestones to vibrant celebrations, this section highlights the heartbeat of our school.
           </p>
         </div>
       </section>
@@ -116,7 +113,7 @@ export default function Home() {
 
 
           {/* ===== Events Section ===== */}
-<div className="bg-white shadow-md rounded-lg p-6 self-start w-full max-h-fit">
+{/* <div className="bg-white shadow-md rounded-lg p-6 self-start w-full max-h-fit">
   <h3 className="text-lg font-semibold text-blue-950 mb-6">
     Upcoming Events
   </h3>
@@ -133,7 +130,7 @@ export default function Home() {
       </li>
     ))}
   </ul>
-</div>
+</div> */}
         </div>
       </section>
     </div>

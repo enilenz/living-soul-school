@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 import Darasimi from "@/assets/Darasimi.png";
+import PeterAdebayo from "@/assets/PeterAdebayo.jpeg";
 import Playground from "@/assets/Playground.jpg";
 
 import Cretche1 from "@/assets/Cretche1.jpg";
@@ -42,14 +43,14 @@ export default function Home() {
         <div className="md:hidden flex flex-col items-start justify-center gap-2">
           <div className="relative w-[160px] sm:w-[200px] aspect-[3/3.2] max-h-[280px]">
             <Image
-              src={Darasimi}
-              alt="Mr. Darasimi Thomas"
+              src={PeterAdebayo}
+              alt="Mr. Peter Adebayo"
               fill
-              className="object-cover rounded-xl shadow-lg z-30"
+              className="object-cover object-top rounded-xl shadow-lg z-30"
             />
           </div>
           <p className="mt-1 text-sm sm:text-base font-medium text-left">
-            Mr. Darasimi Thomas
+            Mr. Peter Adebayo
           </p>
         </div>
 
@@ -76,14 +77,14 @@ export default function Home() {
       <div className="hidden md:flex flex-col items-center justify-center">
         <div className="relative w-[260px] aspect-[3/3.2] max-h-[320px]">
           <Image
-            src={Darasimi}
+            src={PeterAdebayo}
             alt="Mr. Darasimi Thomas"
             fill
-            className="object-cover rounded-xl shadow-lg z-30"
+            className="object-cover object-top rounded-xl shadow-lg z-30"
           />
         </div>
         <p className="mt-3 text-lg font-medium text-center">
-          Mr. Darasimi Thomas
+          Mr. Peter Adebayo
         </p>
       </div>
     </div>
@@ -256,21 +257,79 @@ export default function Home() {
         Creche
       </h2>
       <p className="text-sm sm:text-base leading-relaxed mb-3">
-        We are passionately devoted to the progress of humanity, achieved
-        through high quality education, dedicated service, and uncompromising
-        commitment.
+  At our Creche, we believe that the earliest years of a child’s life are the most formative. Our nurturing environment is designed to provide a safe, stimulating, and loving space where children can explore, learn, and grow. From sensory play to interactive learning activities, every moment is carefully crafted to support holistic development.
       </p>
       <p className="text-sm sm:text-base leading-relaxed">
-        Our primary focus lies in illuminating the path forward, while nourishing
-        our endeavors with love. In this era of heightened awareness, we firmly
-        believe that a comprehensive education holds the key to overcoming
-        life&apos;s myriad challenges. With the radiance of our knowledge and the
-        warmth of our compassion, we aspire to attain nothing less than the very
-        best.
+Our trained caregivers prioritize each child’s unique personality and pace, fostering confidence, curiosity, and emotional intelligence. Through play-based learning, we encourage social interaction, creativity, and problem-solving skills, setting a strong foundation for lifelong learning.
       </p>
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+<section
+  className="bg-white py-16 sm:py-20 md:py-28 px-6 sm:px-12 md:px-24 text-black"
+  id="primary"
+>
+  <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-10 md:gap-16">
+
+    {/* IMAGE — top on mobile, left on desktop */}
+    <div className="relative flex justify-center items-center order-1 md:order-1">
+      
+      {/* Bigger Purple background */}
+      <div
+        className="absolute rounded-xl bg-violet-300 shadow-md rotate-[-6deg]
+        -translate-y-3 -translate-x-4
+        w-[280px] h-[320px]            /* mobile */
+        sm:w-[320px] sm:h-[360px]      /* tablet */
+        md:w-[260px] md:h-[320px]      /* desktop */
+        "
+      />
+
+      {/* Bigger Foreground image */}
+      <div
+        className="relative rounded-xl overflow-hidden shadow-lg z-10
+        w-[300px] h-[340px]            /* mobile */
+        sm:w-[320px] sm:h-[360px]      /* tablet */
+        md:w-[290px] md:h-[310px]      /* desktop */
+        "
+      >
+        <Image
+          src={Cretche2}
+          alt="Primary School Kids"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
+
+    {/* TEXT — below on mobile, right on desktop */}
+    <div className="col-span-2 text-left order-2 md:order-2">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
+        Nursery & Primary School
+      </h2>
+      <p className="text-sm sm:text-base leading-relaxed mb-3">
+Our Nursery & Primary programs are designed to provide a smooth and engaging transition from early childhood into structured learning. Children are encouraged to explore their talents, ask questions, and develop a love for learning through hands-on activities, group projects, and interactive lessons.
+      </p>
+      <p className="text-sm sm:text-base leading-relaxed">
+At this stage, we also emphasize values such as responsibility, empathy, and perseverance. By blending structured learning with play and exploration, we empower students to develop confidence, independence, and a sense of purpose that will guide them through their academic journey and beyond.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+   
+
+
+
+
+
 
 
 
@@ -284,7 +343,7 @@ export default function Home() {
     <div className="w-full md:w-auto flex flex-col items-start">
       {/* Heading */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-2 md:mb-12 pt-12 md:pt-24 text-left w-full">
-        Living Soul College
+        Living Soul Secondary
       </h2>
 
       {/* Imagery5 — only visible on mobile, smaller & aligned right */}
@@ -355,13 +414,9 @@ export default function Home() {
     className="mt-8 md:mt-12 max-w-7xl mx-auto text-left leading-relaxed
     text-sm sm:text-base px-2 sm:px-0"
   >
-    We are passionately devoted to the progress of humanity, achieved through
-    high-quality education, dedicated service, and unwavering commitment. Our
-    primary focus lies in illuminating the path forward, while nourishing our
-    endeavors with love. In this era of heightened awareness, we firmly believe
-    that a comprehensive education holds the key to overcoming life&apos;s
-    myriad challenges. With the radiance of our knowledge and the warmth of our
-    compassion, we aspire to attain nothing less than the very best.
+Secondary school is where dreams start taking shape! We challenge students to think deeply, explore widely, and push themselves while providing guidance and support to help them shine academically and personally.
+Our curriculum combines core subjects with creative, hands-on experiences, mentorship programs, and exciting extracurricular opportunities. Students learn to think critically, collaborate effectively, and tackle real-world challenges with confidence.
+We believe in producing not just graduates, but young leaders with curiosity, integrity, and ambition. Every student leaves ready to take on new adventures, pursue their passions, and make a positive impact on the world around them.
   </p>
 </section>
 

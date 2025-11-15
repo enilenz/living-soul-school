@@ -276,7 +276,17 @@ export default function Admissions() {
             {[
               {
                 title: "Creche",
-                age: "Ages 1-3",
+                age: "Ages 1-2",
+                items: [
+                  "Birth Certificate or International Passport",
+                  "Passport-sized photographs for child",
+                  "Recent passport photograph for both parents/guardian",
+                  
+                ],
+              },
+              {
+                title: "Nursery & Primary",
+                age: "Ages 3-10",
                 items: [
                   "Birth Certificate or International Passport",
                   "Passport-sized photographs for child",
@@ -285,17 +295,7 @@ export default function Admissions() {
                 ],
               },
               {
-                title: "Primary",
-                age: "Ages 5-10",
-                items: [
-                  "Birth Certificate or International Passport",
-                  "Passport-sized photographs for child",
-                  "Recent passport photograph for both parents/guardian",
-                  "Last Academic Record",
-                ],
-              },
-              {
-                title: "College",
+                title: "Secondary",
                 age: "Ages 11-16",
                 items: [
                   "Birth Certificate or International Passport",

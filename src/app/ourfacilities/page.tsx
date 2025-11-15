@@ -14,19 +14,21 @@ import WhiteBoards from "@/assets/InteractiveWhiteBoards.jpg";
 import FireSystem from "@/assets/LandingImage.jpg";
 import AirConditioned from "@/assets/AirConditionedRooms.jpg";
 import SchoolHall from "@/assets/SchoolHall.jpg";
+import Bed from "@/assets/Bed.png";
 
 const facilities = [
   { image: ScienceLab, title: "Science Laboratory" },
   { image: ArtRoom, title: "Art Room" },
   { image: Library, title: "Library" },
   { image: ComputerLab, title: "Computer Lab" },
-  { image: Sickbay, title: "Sickbay" },
+  { image: Bed, title: "Sickbay" },
   { image: Playground, title: "Playground" },
-  { image: Generator, title: "Generator" },
+  
+  // { image: Generator, title: "Generator" },
   { image: WhiteBoards, title: "Interactive White Boards" },
-  { image: FireSystem, title: "Fire Alarm System and Extinguishers" },
-  { image: AirConditioned, title: "Air-conditioned Classrooms" },
-  { image: SchoolHall, title: "School Hall" },
+  // { image: FireSystem, title: "Fire Alarm System and Extinguishers" },
+  { image: AirConditioned, title: "Well Ventilated Classrooms" },
+  //{ image: SchoolHall, title: "School Hall" },
 ];
 
 export default function Home() {
@@ -45,10 +47,7 @@ export default function Home() {
           </h1>
 
           <p>
-            We understand just how important it is for parents to choose the
-            right school for their child. The process outlined below is typical
-            but can be adapted to ensure that you and your child are supported
-            every step of the way.{" "}
+           Our facilities are designed to inspire learning, creativity, and comfort at every stage of a child’s development. Each space blends safety, innovation, and functionality to support exceptional academic and personal growth.
           </p>
         </div>
       </section>

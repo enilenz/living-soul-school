@@ -14,24 +14,40 @@ import WhiteBoards from "@/assets/InteractiveWhiteBoards.jpg";
 import FireSystem from "@/assets/LandingImage.jpg";
 import AirConditioned from "@/assets/AirConditionedRooms.jpg";
 import SchoolHall from "@/assets/SchoolHall.jpg";
-
+import AwardGiving from "@/assets/AwardGiving.jpeg";
+import AutoCarousel6 from "@/assets/AutoCarousel6.jpeg";
+import AutoCarousel7 from "@/assets/AutoCarousel7.jpeg";
+import AutoCarousel8 from "@/assets/AutoCarousel8.jpeg";
+import AutoCarousel9 from "@/assets/AutoCarousel9.jpeg";
+import AutoCarousel10 from "@/assets/AutoCarousel10.jpeg";
+import AutoCarousel11 from "@/assets/AutoCarousel11.jpeg";
+import CareerDay1 from "@/assets/CareerDay1.png"
+import CareerDay2 from "@/assets/CareerDay2.png"
+import CareerDay3 from "@/assets/CareerDay3.png"
+import Cultural1 from "@/assets/Cultural1.jpeg"
+import Cultural2 from "@/assets/Cultural2.jpeg"
+import Cultural3 from "@/assets/Cultural3.jpeg"
+import Sport1 from "@/assets/Sport1.jpeg"
+import Sport2 from "@/assets/Sport2.jpeg"
+import Sport3 from "@/assets/Sport3.jpeg"
+import Sport4 from "@/assets/Sport4.jpeg"
 
 const eventSections = [
   {
     title: "Inter-House Sport",
-    images: [ScienceLab, AirConditioned, Library, CodePolicies],
+    images: [Sport1, Sport2, Sport3, Sport4],
   },
   {
     title: "Cultural Day",
-    images: [WhiteBoards, ArtRoom, Sickbay],
+    images: [Cultural1, Cultural2, Cultural3],
   },
   {
-    title: "Christmas Carol",
-    images: [SchoolHall, Generator, Sickbay],
+    title: "Career Day",
+    images: [CareerDay2, CareerDay3, CareerDay1],
   },
   {
-    title: "All Best Stars",
-    images: [FireSystem, ComputerLab, Generator],
+    title: "Award Giving",
+    images: [AwardGiving, AutoCarousel8, AutoCarousel11],
   },
 ];
 
@@ -51,10 +67,7 @@ export default function Home() {
           </h1>
 
           <p>
-            We understand just how important it is for parents to choose the
-            right school for their child. The process outlined below is typical
-            but can be adapted to ensure that you and your child are supported
-            every step of the way.{" "}
+Explore a visual journey through the life of our school. Each image captures the joy, learning, and memorable experiences that define our vibrant community.
           </p>
         </div>
       </section>
@@ -90,6 +103,8 @@ export default function Home() {
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
+                  <div className="absolute inset-0 bg-black/30"></div>
+
                 </div>
               ))}
             </div>

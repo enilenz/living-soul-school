@@ -166,7 +166,7 @@ const scrollToFooter = () => {
                       </NavigationMenuLink>
                     </li>
                     <DropdownMenuSeparator />
-                    <li>
+                    {/* <li>
                       <NavigationMenuLink asChild>
                         <Link
                           href="/ourgallery"
@@ -176,7 +176,7 @@ const scrollToFooter = () => {
                         </Link>
                       </NavigationMenuLink>
                     </li>
-                    <DropdownMenuSeparator />
+                    <DropdownMenuSeparator /> */}
                     <li>
                       <NavigationMenuLink asChild>
                         <Link

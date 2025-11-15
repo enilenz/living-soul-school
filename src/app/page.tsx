@@ -52,17 +52,22 @@ export default function Home() {
               a bright future.
             </p>
 
-            <div className="flex flex-wrap gap-3">
-              <Button className="text-white bg-blue-950 px-6 sm:px-8 hover:text-black">
-                Enroll
-              </Button>
-              <Button
-                className="text-white bg-transparent border-white hover:text-black"
-                variant="outline"
-              >
-                Learn More
-              </Button>
-            </div>
+<div className="flex flex-wrap gap-3">
+  <Link href="/academics">
+    <Button className="text-white bg-blue-950 px-6 sm:px-8 hover:text-black">
+      Enroll
+    </Button>
+  </Link>
+
+  <Link href="/our-history">
+    <Button
+      className="text-white bg-transparent border-white hover:text-black"
+      variant="outline"
+    >
+      Learn More
+    </Button>
+  </Link>
+</div>
           </div>
 
           {/* Right (Hidden on small screens) */}
@@ -95,16 +100,37 @@ export default function Home() {
         />
       </section> */}
 
-      {/* ✨ INSPIRATIONAL SECTION */}
-<section className="relative py-24 bg-blue-900 text-white text-center ">
-  <div className="absolute inset-0 bg-[url('/your-campus-photo.jpg')] bg-cover bg-center opacity-20" />
-  <div className="relative max-w-3xl mx-auto px-6">
-    <h2 className="text-3xl md:text-4xl font-bold mb-6">“Education is the most powerful tool for shaping tomorrow’s leaders.”</h2>
-    <p className="text-lg text-gray-100">
+      
+
+
+{/* ✨ INSPIRATIONAL QUOTE SECTION */}
+<section className="relative py-16 bg-blue-900 text-white text-center overflow-hidden">
+
+  {/* Quote Content */}
+  <div className="relative max-w-3xl mx-auto px-6 flex flex-col items-center">
+    
+    <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-6">
+      “Education is the most powerful tool for shaping tomorrow’s leaders.”
+    </h2>
+
+    <p className="text-base sm:text-lg text-gray-200 mb-4">
       At Living Souls Schools, we don’t just teach — we inspire excellence, character, and purpose in our students.
     </p>
+
+    {/* Author */}
+    <div className="mt-10 w-full flex flex-col items-center md:items-end">
+      <p className="text-sm sm:text-base text-gray-100 font-semibold">
+        — Mrs. Olubola Egunbiyi
+      </p>
+      <p className="text-xs sm:text-sm text-gray-300 italic">
+        Cofounder, Living Souls Schools
+      </p>
+    </div>
+
   </div>
 </section>
+
+
 
 
 <section

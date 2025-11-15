@@ -24,10 +24,7 @@ export default function Home() {
         <div className="relative z-10 text-white w-full max-w-7xl flex flex-col mx-auto px-8 gap-4">
           <h1 className="text-5xl font-bold leading-tight">Our History</h1>
           <p>
-            Living Soul Schools is an organization with the dedication,
-            expertise and resources to make a difference through education. We
-            are committed to giving adequate attention to moral education,
-            spiritual value, social and a sound academic life.
+Our story is one of passion, growth, and unwavering dedication to quality education. From our humble beginnings to our present achievements, our journey reflects a legacy of excellence and purpose.
           </p>
         </div>
       </section>
@@ -120,7 +117,7 @@ export default function Home() {
 
 
         {/* Mission Section */}
-        <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-8 max-w-5xl mx-auto">
+        {/* <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-8 max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-semibold text-blue-950 mb-4">
             Our Mission
           </h2>
@@ -139,10 +136,10 @@ export default function Home() {
             and intellectually sound leaders, we currently serve thousands of
             students across Lagos.
           </p>
-        </div>
+        </div> */}
 
         {/* Core Values Section */}
-        <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-8 max-w-5xl mx-auto">
+        {/* <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-8 max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-semibold text-blue-950 mb-4">
             Core Values
           </h2>
@@ -158,7 +155,7 @@ export default function Home() {
             potential. Our core belief is that every child deserves the
             opportunity to succeed, guided by moral and academic excellence.
           </p>
-        </div>
+        </div> */}
       </section>
     </div>
   );
