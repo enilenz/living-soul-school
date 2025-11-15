@@ -1,6 +1,12 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import CodePolicies from "@/assets/CodeandPolicies.jpg";
+
+export const metadata:Metadata = {
+  title: "Code and Policies – Your School Name",
+  description: "Learn about our mission, vision, and academic excellence.",
+};
 
 export default function Home() {
   return (

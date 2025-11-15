@@ -205,10 +205,16 @@
 
 
 
+import type { Metadata } from "next";
 import Image from "next/image";
 import LandingImage from "@/assets/LandingImage.jpg";
 import Graduates from "@/assets/Graduates.png";
 import BadgeCheck from "@/assets/BadgeCheck.png";
+
+export const metadata:Metadata = {
+  title: "Admissions – Your School Name",
+  description: "Learn about our mission, vision, and academic excellence.",
+};
 
 export default function Admissions() {
   return (
