@@ -1,11 +1,18 @@
-import Image from "next/image";
+
 import type { Metadata } from "next";
 
 import CodePolicies from "@/assets/CodeandPolicies.jpg";
 
 export const metadata:Metadata = {
-  title: "Code and Policies – Your School Name",
+  title: "Code and Policies – Living Soul Schools",
   description: "Learn about our mission, vision, and academic excellence.",
+    openGraph: {
+    title: "Living Soul Schools | Code and Policies",
+    description: "A modern school in Lagos with quality education.",
+    url: "https://livingsoulschools.com/codesandpolicies",
+    type: "website",
+
+  },
 };
 
 export default function Home() {

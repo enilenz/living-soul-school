@@ -1,19 +1,19 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
-import CodePolicies from "@/assets/CodeandPolicies.jpg";
 
 
 import ScienceLab from "@/assets/ScienceLaboratory.jpg";
 import ArtRoom from "@/assets/ArtRoom.jpg";
 import Library from "@/assets/Library.jpg";
 import ComputerLab from "@/assets/ComputerLab.jpg";
-import Sickbay from "@/assets/SickBay.jpg";
+
 import Playground from "@/assets/Playground.jpg";
-import Generator from "@/assets/LandingImage.jpg";
+
 import WhiteBoards from "@/assets/InteractiveWhiteBoards.jpg";
-import FireSystem from "@/assets/LandingImage.jpg";
+
 import AirConditioned from "@/assets/AirConditionedRooms.jpg";
-import SchoolHall from "@/assets/SchoolHall.jpg";
+
 import Bed from "@/assets/Bed.png";
 
 const facilities = [
@@ -22,14 +22,23 @@ const facilities = [
   { image: Library, title: "Library" },
   { image: ComputerLab, title: "Computer Lab" },
   { image: Bed, title: "Sickbay" },
-  { image: Playground, title: "Playground" },
-  
-  // { image: Generator, title: "Generator" },
+  { image: Playground, title: "Playground" }, 
   { image: WhiteBoards, title: "Interactive White Boards" },
-  // { image: FireSystem, title: "Fire Alarm System and Extinguishers" },
   { image: AirConditioned, title: "Well Ventilated Classrooms" },
-  //{ image: SchoolHall, title: "School Hall" },
+ 
 ];
+
+export const metadata:Metadata = {
+  title: "Our Facilities – Living Soul Schools",
+  description: "Take a look at our facilities that are designed to inspire learning and creativity",
+      openGraph: {
+    title: "Living Soul Schools | Our Facilities",
+    description: "A modern school in Lagos with quality education.",
+    url: "https://livingsoulschools.com/ourfacilities",
+    type: "website",
+  
+  },
+};
 
 export default function Home() {
   return (
@@ -59,12 +68,12 @@ export default function Home() {
   id="facilities"
   className="scroll-mt-24 py-12 px-6 md:px-24 bg-white"
 >
-  {/* Section Header */}
+  
   <h2 className="text-2xl md:text-3xl font-bold text-blue-950 mb-6">
     Our School Facilities
   </h2>
 
-  {/* Body Text */}
+
   <div className="space-y-5 text-gray-700 text-sm md:text-base leading-relaxed">
     <p>
       Living Souls Schools is equipped with modern, safe, and child-friendly facilities designed to
@@ -109,7 +118,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {facilities.map((item, idx) => (
             <div key={idx} className="relative group rounded-lg overflow-hidden shadow-md">
-              {/* Image */}
+             
               <div className="w-full h-[240px] md:h-[300px] relative">
                 <Image
                   src={item.image}
@@ -119,7 +128,7 @@ export default function Home() {
                 />
               </div>
 
-              {/* Overlay caption */}
+             
               <div className="absolute bottom-0 w-full bg-black/60 text-white py-2 text-center text-sm md:text-base">
                 {item.title}
               </div>

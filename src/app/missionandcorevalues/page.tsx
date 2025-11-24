@@ -1,7 +1,20 @@
-import Image from "next/image";
 
-import CodePolicies from "@/assets/CodeandPolicies.jpg";
+import type { Metadata } from "next";
+
 import Playground from "@/assets/Playground.jpg";
+
+
+export const metadata:Metadata = {
+  title: "Mission and Core Values – Living Soul Schools",
+  description: "Learn about our mission, vision, and academic excellence.",
+      openGraph: {
+    title: "Living Soul Schools | Mission and Core Values",
+    description: "A modern school in Lagos with quality education.",
+    url: "https://livingsoulschools.com/missionandcorevalues",
+    type: "website",
+  
+  },
+};
 
 export default function Home() {
   return (

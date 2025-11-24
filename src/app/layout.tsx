@@ -1,29 +1,12 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono, Inter } from "next/font/google";
+
 import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FooterScrollHandler from "@/components/FooterScrollHandler";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
-// const inter = Inter({
-//   subsets: ["latin"]
-// })
-
-// export const metadata: Metadata = {
-//   title: "Living Soul School",
-//   description: "Living Soul School",
-// };
 
 export const metadata: Metadata= {
   title: "Living Soul School – Lagos, Nigeria",
@@ -38,26 +21,50 @@ export const metadata: Metadata= {
     "Soul Schools",
     "Living Schools"
   ],
-  metadataBase: new URL("https://yourdomain.com"),
+  alternates: { canonical: 'https://livingsoulschools.com' },
+  metadataBase: new URL("https://livingsoulschools.com"),
   openGraph: {
     title: "Living Soul Schools",
     description: "A modern school in Lagos with quality education.",
-    url: "https://yourdomain.com",
+    url: "https://livingsoulschools.com",
     type: "website",
-    // images: [
-    //   {
-    //     url: "/og-image.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //   }
-    // ]
+    images: [
+      {
+        url: "/LandingImage.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Living Soul Schools - Lagos",
+      }
+    ]
   },
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title: "Your School Name",
-  //   description: "Top private school in Lagos.",
-  //   images: ["/og-image.jpg"],
-  // }
+  twitter: {
+    card: "summary_large_image",
+    title: "Living Soul Schools",
+    description: "Top private school in Lagos.",
+    images: ["/LandingImage.jpg"],
+  },
+ other: {
+   
+    "Content-Security-Policy":
+      "default-src 'self'; " +
+      "script-src 'self' 'unsafe-inline' https://www.gstatic.com https://www.google.com; " +
+      "style-src 'self' 'unsafe-inline'; " +
+      "img-src 'self' data: https: blob:; " +
+      "font-src 'self' data:; " +
+      "connect-src 'self' https:; " +
+      "frame-src https:; " +
+      "media-src 'self' blob: data:; " +
+      "object-src 'none'; ",
+
+  
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Strict-Transport-Security":
+      "max-age=31536000; includeSubDomains; preload",
+    "Permissions-Policy":
+      "camera=(), microphone=(), geolocation=(), payment=()",
+  },
 };
 
 
@@ -69,19 +76,12 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      {/* <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`} className={inter.className}
-         
-      >
-        <Header></Header>
-        {children}
-        <Footer></Footer>
-      </body> */}
+
       <body className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
-        {/* <FooterScrollHandler /> */}
+   
       </body>
     </html>
   );

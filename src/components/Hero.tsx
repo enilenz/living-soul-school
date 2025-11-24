@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 type HeroProps = {
   bgImage: string; // URL or imported image (e.g., MyImage.src)

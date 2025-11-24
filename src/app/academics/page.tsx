@@ -3,25 +3,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 
-import Header from "@/components/Header";
-
-import { Button } from "@/components/ui/button";
-import Card from "@/components/Card";
-import ReadMoreCard from "@/components/ReadMoreCard";
-import AutoCarousel from "@/components/AutoCarousel";
-import FeaturedNewsCard from "@/components/FeaturedNewsCard";
-
 import Academics from "@/assets/Academics.jpg";
-import LandingImage from "@/assets/LandingImage.jpg";
-import Graduates from "@/assets/Graduates.png";
-import BadgeCheck from "@/assets/BadgeCheck.png";
-import Child1 from "@/assets/Child1.jpg";
-import Child2 from "@/assets/Child2.jpg";
-import Child3 from "@/assets/Child3.jpg";
+import Library from "@/assets/ArtRoom.jpg";
+
 
 import Cretche1 from "@/assets/Cretche1.jpg";
 import Cretche2 from "@/assets/Cretche2.jpg";
-import Cretche3 from "@/assets/Cretche3.jpg";
+
 import Cretche4 from "@/assets/Cretche4.jpg";
 
 import Imagery6 from "@/assets/Imagery6.png";
@@ -37,47 +25,32 @@ const [activeTab, setActiveTab] = useState<TabType>("Cretche");
 
 const schedules: Record<TabType, string[][]> = {
   Cretche: [
-      ["07:50 - 08:15", "Registration"],
-      ["08:15 - 08:55", "Lesson 1"],
-      ["08:55 - 09:35", "Lesson 2"],
-      ["09:35 - 10:15", "Lesson 3"],
+      ["07:50 - 08:15", "Assembly"],
+      ["08:20 - 10:15", "Lessons"],
       ["10:15 - 10:25", "Short Break"],
-      ["10:25 - 11:05", "Lesson 4"],
-      ["11:05 - 11:45", "Lesson 5"],
+      ["10:25 - 11:45", "Lessons"],
       ["11:45 - 12:15", "Long Break"],
-      ["12:15 - 12:55", "Lesson 6"],
-      ["12:55 - 01:35", "Lesson 7"],
-      ["01:35 - 02:15", "Lesson 8"],
-      ["02:15 - 02:55", "Lesson 9"],
+      ["12:15 - 14:00", "Lessons"],
+      ["14:00", "Closing Time"]
      
   ],
   Primary: [
-      ["07:50 - 08:15", "Registration"],
-      ["08:15 - 08:55", "Lesson 1"],
-      ["08:55 - 09:35", "Lesson 2"],
-      ["09:35 - 10:15", "Lesson 3"],
+      ["07:50 - 08:15", "Assembly"],
+      ["08:20 - 10:15", "Lessons"],
       ["10:15 - 10:25", "Short Break"],
-      ["10:25 - 11:05", "Lesson 4"],
-      ["11:05 - 11:45", "Lesson 5"],
+      ["10:25 - 11:45", "Lessons"],
       ["11:45 - 12:15", "Long Break"],
-      ["12:15 - 12:55", "Lesson 6"],
-      ["12:55 - 01:35", "Lesson 7"],
-      ["01:35 - 02:15", "Lesson 8"],
-      ["02:15 - 02:55", "Lesson 9"],
+      ["12:15 - 15:00", "Lessons"],
+      ["15:00", "Closing Time"]
   ],
   Secondary: [
-      ["07:50 - 08:15", "Registration"],
-      ["08:15 - 08:55", "Lesson 1"],
-      ["08:55 - 09:35", "Lesson 2"],
-      ["09:35 - 10:15", "Lesson 3"],
+      ["07:50 - 08:15", "Assembly"],
+      ["08:20 - 10:15", "Lessons"],
       ["10:15 - 10:25", "Short Break"],
-      ["10:25 - 11:05", "Lesson 4"],
-      ["11:05 - 11:45", "Lesson 5"],
+      ["10:25 - 11:45", "Lessons"],
       ["11:45 - 12:15", "Long Break"],
-      ["12:15 - 12:55", "Lesson 6"],
-      ["12:55 - 01:35", "Lesson 7"],
-      ["01:35 - 02:15", "Lesson 8"],
-      ["02:15 - 02:55", "Lesson 9"],
+      ["12:15 - 15:00", "Lessons"],
+      ["15:00", "Closing Time"]
   ]
 };
 
@@ -141,7 +114,7 @@ const schedules: Record<TabType, string[][]> = {
       ],
       secondParagraph:
         "By the end of Primary School, our learners are confident, articulate, and prepared for the challenges of higher learning.",
-      image: Cretche3,
+      image: Library,
       reverse: false,
     },
     {
@@ -294,10 +267,10 @@ const schedules: Record<TabType, string[][]> = {
   <div className="space-y-4 mb-10 text-sm md:text-base  leading-relaxed">
 
     <p>
-The school is open from Monday to Friday from 7:30 a.m. Closing time from Monday to Thursday is 3pm while on Friday is 1pm. each day. Students should be picked up at the end of their school day.
+LSS begins the day with assembly at 7:50am and the first class at 8:20am, with each subject running for 40 minutes. Closing time from Monday to Thursday is 3pm while on Friday is 1pm with an additional 1-hour after school lesson available.
     </p>
     <p>
-We operate a ten day timetable across a two weeks (A and B).
+ Students should be picked up at the end of their school day.
     </p>
     <p>
 The organisation of a typical day at LSS is as follows:

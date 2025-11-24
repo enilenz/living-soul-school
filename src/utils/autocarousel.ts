@@ -13,6 +13,9 @@ import AutoCarousel11 from "@/assets/AutoCarousel11.jpeg";
 
 import FeaturedNewsImage1 from "@/assets/FeaturedNewsImage1.jpg";
 import FeaturedNewsImage2 from "@/assets/FeaturedNewsImage2.jpg";
+import CareerDay1 from "@/assets/Library.jpg";
+import CareerDay2 from "@/assets/Sport1.jpeg";
+
 
 export const carouselData = [
   { src: AutoCarousel1, alt: "Image 1" },
@@ -30,10 +33,9 @@ export const carouselData = [
 ];
 
 export const featuredNewsData = [
-  { src: FeaturedNewsImage1, alt: "Image 1", news: "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."},
-  { src: FeaturedNewsImage2, alt: "Image 2", news: "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."},
-  { src: FeaturedNewsImage1, alt: "Image 3", news: "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."},
-  { src: FeaturedNewsImage2, alt: "Image 4", news: "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."},
-  { src: FeaturedNewsImage1, alt: "Image 5", news: "A note from our founder, High Chief (Mrs) Winifred Awosika. Learn about our commitment to give the best possible education for your child."},
+  {id: "event-1", src: FeaturedNewsImage1, alt: "Image 1", news: "Nurturing Excellence Through Culture and Values"},
+  {id: "event-2", src: FeaturedNewsImage2, alt: "Image 2", news: "Inspiring Champions: Excellence in Sports and Team Spirit"},
+  {id: "event-3", src: CareerDay1, alt: "Image 3", news: "Creativity in Bloom: Where Imagination Meets Learning"},
+  {id: "event-4",src: CareerDay2, alt: "Image 4", news: "Leadership: Quality Education in Action"},
   
 ];

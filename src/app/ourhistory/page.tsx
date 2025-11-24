@@ -1,20 +1,27 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
-import Darasimi from "@/assets/Darasimi.png";
 import Playground from "@/assets/Playground.jpg";
 import LandingImage from "@/assets/LandingImage.jpg";
 
-import Cretche1 from "@/assets/Cretche1.jpg";
-import Cretche2 from "@/assets/Cretche2.jpg";
-import Cretche3 from "@/assets/Cretche3.jpg";
-import Cretche4 from "@/assets/Cretche4.jpg";
 
-import Imagery5 from "@/assets/Imagery5.png";
+
+export const metadata:Metadata = {
+  title: "Our History – Living Soul Schools",
+  description: "Be introduced to our story which is one of passion, growth, and unwavering dedication to quality education",
+      openGraph: {
+    title: "Living Soul Schools | Our History",
+    description: "A modern school in Lagos with quality education.",
+    url: "https://livingsoulschools.com/ourhistory",
+    type: "website",
+  
+  },
+};
 
 export default function Home() {
   return (
     <div>
-      {/* ===== Hero Section ===== */}
+     
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-top"
@@ -116,7 +123,7 @@ Our story is one of passion, growth, and unwavering dedication to quality educat
 </div>
 
 
-        {/* Mission Section */}
+      
         {/* <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-8 max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-semibold text-blue-950 mb-4">
             Our Mission
@@ -138,7 +145,7 @@ Our story is one of passion, growth, and unwavering dedication to quality educat
           </p>
         </div> */}
 
-        {/* Core Values Section */}
+     
         {/* <div className="bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-8 max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-semibold text-blue-950 mb-4">
             Core Values

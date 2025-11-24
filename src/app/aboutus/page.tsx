@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 
-import Darasimi from "@/assets/Darasimi.png";
 import PeterAdebayo from "@/assets/PeterAdebayo.jpeg";
 import Playground from "@/assets/Playground.jpg";
 
@@ -12,6 +11,7 @@ import Cretche3 from "@/assets/Cretche3.jpg";
 import Cretche4 from "@/assets/Cretche4.jpg";
 
 import Imagery5 from "@/assets/Imagery5.png";
+
 
 
 
@@ -47,13 +47,13 @@ export default function Home() {
           <div className="relative w-[160px] sm:w-[200px] aspect-[3/3.2] max-h-[280px]">
             <Image
               src={PeterAdebayo}
-              alt="Mr. Peter Adebayo"
+              alt="Managing Director, Living Souls Schools"
               fill
               className="object-cover object-top rounded-xl shadow-lg z-30"
             />
           </div>
           <p className="mt-1 text-sm sm:text-base font-medium text-left">
-            Mr. Peter Adebayo
+            Mr. Abayomi Adebayo
           </p>
         </div>
 

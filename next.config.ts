@@ -1,20 +1,13 @@
-// import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-//   /* config options here */
-// };
-
-// export default nextConfig;
 
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // Enables static export
-  distDir: "out",   // Export folder (Zoho will use this)
+  output: "export", 
+  distDir: "out",   
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true, 
   },
-  trailingSlash: true, // Optional: makes routing safer on static hosts
+  trailingSlash: true, 
 };
 
 export default nextConfig;

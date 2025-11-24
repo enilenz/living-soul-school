@@ -28,34 +28,7 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // const scrollToFooter = () => {
-  //   const footer = document.getElementById("footer");
 
-  //   if (footer) {
-  //     footer.scrollIntoView({ behavior: "smooth" });
-  //   } else {
-  //     if (pathname !== "/") {
-  //       router.push("/");
-
-  //       // Poll until footer exists
-  //       const interval = setInterval(() => {
-  //         const f = document.getElementById("footer");
-  //         if (f) {
-  //           f.scrollIntoView({ behavior: "smooth" });
-  //           clearInterval(interval);
-  //         }
-  //       }, 50);
-  //     } else {
-  //       // Already on homepage, wait for footer to render
-  //       const interval = setInterval(() => {
-  //         const f = document.getElementById("footer");
-  //         if (f) {
-  //           f.scrollIntoView({ behavior: "smooth" });
-  //           clearInterval(interval);
-  //         }
-  //       }, 50);
-  //     }
-  //   }
   // };
 
   // inside Navbar component
@@ -258,12 +231,13 @@ const scrollToFooter = () => {
           role="dialog"
           aria-modal="true"
         >
-          <Link href="/" className="w-full py-3 border-b hover:text-gray-600">
+          <Link href="/"  onClick={() => setIsMenuOpen(false)} className="w-full py-3 border-b hover:text-gray-600">
             Home
           </Link>
 
           <Link
             href="/admissions"
+            onClick={() => setIsMenuOpen(false)}
             className="w-full py-3 border-b hover:text-gray-600"
           >
             Admissions
@@ -273,17 +247,21 @@ const scrollToFooter = () => {
           <div className="w-full border-b pb-3">
             <p className="font-semibold text-gray-900 mb-3">About Us</p>
             <div className="pl-4 flex flex-col gap-3 text-gray-700 text-base sm:text-lg">
-              <Link href="/ourfacilities" className="hover:text-gray-600">
+              <Link href="/aboutus" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-600">
+                About Us
+              </Link>
+              <Link href="/ourfacilities" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-600">
                 Our Facilities
               </Link>
-              <Link href="/ourhistory" className="hover:text-gray-600">
+              <Link href="/ourhistory" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-600">
                 Our History
               </Link>
-              <Link href="/ourmanagement" className="hover:text-gray-600">
-                Our Management
+              <Link href="/faq" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-600">
+                FAQ
               </Link>
               <Link
                 href="/missionandcorevalues"
+                onClick={() => setIsMenuOpen(false)}
                 className="hover:text-gray-600"
               >
                 Missions & Core Values
@@ -293,6 +271,7 @@ const scrollToFooter = () => {
 
           <Link
             href="/academics"
+            onClick={() => setIsMenuOpen(false)}
             className="w-full py-3 border-b hover:text-gray-600"
           >
             Academics
@@ -300,6 +279,7 @@ const scrollToFooter = () => {
 
           <Link
             href="/newsandevents"
+            onClick={() => setIsMenuOpen(false)}
             className="w-full py-3 border-b hover:text-gray-600"
           >
             News & Events
@@ -307,6 +287,7 @@ const scrollToFooter = () => {
 
           <Link
             href="/ourgallery"
+            onClick={() => setIsMenuOpen(false)}
             className="w-full py-3 border-b hover:text-gray-600"
           >
             Gallery

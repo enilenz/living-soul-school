@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-blue-700" />
-            <span>Living Souls Schools, Addo Road</span>
+            <span>7-9 Ben Temofen Cresecent, Ajah, Lagos</span>
           </div>
         </div>
       </div>

@@ -1,23 +1,20 @@
 "use client";
 
 import { useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
 
-import CodePolicies from "@/assets/CodeandPolicies.jpg";
 import Playground from "@/assets/Playground.jpg";
 
 export default function Home() {
 
   useEffect(() => {
-    // Scroll smoothly to hash when page loads
+   
     const hash = window.location.hash;
     if (hash) {
       const el = document.querySelector(hash);
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 200); // small delay for layout to render
+        }, 200); 
       }
     }
   }, []);
@@ -45,7 +42,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* === Details Sections === */}
+     
       <section className="px-6 md:px-24 py-16 md:py-24 bg-white space-y-20">
         
 <div id="foundersnote" className="scroll-mt-24">
@@ -81,7 +78,7 @@ export default function Home() {
     Living Souls Schools a true home of excellence, purpose, and growth.
   </p>
 
-  {/* Signature block */}
+ 
   <div className="flex flex-col items-start text-left space-y-1">
     <p className="text-gray-700 text-sm md:text-base">With warm regards,</p>
     <p className="font-semibold text-blue-950 text-base md:text-lg">Mr. EGUNBIYI Peter Adebayo.</p>
@@ -92,7 +89,7 @@ export default function Home() {
 </div>
 
 
-        {/* Core Values Section */}
+     
         <div id="directorssnote" className="scroll-mt-24">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Director&apos;s Note</h2>
   <p className="leading-relaxed text-sm md:text-base text-gray-700 mb-8">
@@ -109,7 +106,7 @@ I invite you to be part of our story to experience the warmth, purpose, and tran
 
   </p>
 
-  {/* Signature block */}
+ 
   <div className="flex flex-col items-start text-left space-y-1">
     <p className="text-gray-700 text-sm md:text-base">With sincere regards,</p>
     <p className="font-semibold text-blue-950 text-base md:text-lg">Abayomi Adebayo</p>
@@ -119,7 +116,7 @@ I invite you to be part of our story to experience the warmth, purpose, and tran
   </div>
         </div>
 
-        {/* Vision Section */}
+       
         <div id="registar" className="scroll-mt-24">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Registar&apos;s Office</h2>
   <p className="leading-relaxed text-sm md:text-base text-gray-700 mb-8">
@@ -131,7 +128,7 @@ Our goal is to make the journey into the Living Souls Schools community both wel
 
 
   <div className="space-y-12 text-gray-700 leading-relaxed max-w-5xl">
-  {/* Core Responsibilities List */}
+  
   <ul className="list-disc pl-6 space-y-2">
     <li>
       Managing admissions and enrollment across crèche, Nursery, Primary, and Secondary levels.
@@ -142,7 +139,7 @@ Our goal is to make the journey into the Living Souls Schools community both wel
     <li>Offering admissions counseling and responding to parent inquiries promptly.</li>
   </ul>
 
-  {/* Admissions Process */}
+  
   <div>
     <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
       Admissions Process at a Glance
@@ -171,7 +168,7 @@ Our goal is to make the journey into the Living Souls Schools community both wel
     </ul>
   </div>
 
-  {/* Registrar's Message */}
+ 
   <div className="border-l-4 border-blue-900 pl-6 py-4 bg-gray-50 rounded-md">
     <h3 className="text-xl md:text-2xl font-semibold text-blue-950 mb-3">
       Message from the Registrar
@@ -187,7 +184,7 @@ Our goal is to make the journey into the Living Souls Schools community both wel
     <p className="font-semibold text-blue-950">Mrs. Eluwa Justina</p>
   </div>
 
-  {/* Contact Info */}
+  
   <div>
     <h3 className="text-xl md:text-2xl font-semibold text-black mb-3">
       Contact the Registrar’s Office
@@ -203,7 +200,7 @@ Our goal is to make the journey into the Living Souls Schools community both wel
 
         </div>
 
-        {/* Policies Section */}
+       
         <div id="calendar" className="scroll-mt-24 space-y-6">
      
 <div className="text-left space-y-2">
@@ -215,14 +212,14 @@ Our goal is to make the journey into the Living Souls Schools community both wel
     </p>
   </div>
 
-  {/* Intro */}
+  
   <div className="text-base md:text-lg text-gray-700 leading-relaxed max-w-5xl space-y-4">
     <p>
       At Living Souls Schools, every academic year is thoughtfully structured to balance learning, creativity, discipline, and personal development. Our calendar reflects our commitment to educational excellence, moral values, and holistic education, ensuring that every term offers opportunities for both intellectual and personal growth.
     </p>
   </div>
 
-  {/* Academic Structure */}
+ 
   <div className="max-w-5xl space-y-6">
     <h3 className="text-xl md:text-2xl font-semibold text-black">
       Our Academic Structure
@@ -244,7 +241,7 @@ Our goal is to make the journey into the Living Souls Schools community both wel
     </ul>
   </div>
 
-  {/* Special Events */}
+
   <div className="max-w-5xl space-y-6">
     <h3 className="text-xl md:text-2xl font-semibold text-black">
       Special Events and Highlights
@@ -263,7 +260,7 @@ Our goal is to make the journey into the Living Souls Schools community both wel
     </ul>
   </div>
 
-  {/* Commitment */}
+
   <div className="max-w-5xl text-gray-700 space-y-4">
     <h3 className="text-xl md:text-2xl font-semibold text-black">
       Our Commitment
@@ -295,7 +292,7 @@ We have witnessed outstanding improvement in academics, behavior, confidence, an
 
   </p>
 
-  {/* Signature block */}
+
   <div className="flex flex-col items-start text-left space-y-1">
     <p className="text-gray-700 text-sm md:text-base">With sincere appreciation,</p>
     <p className="font-semibold text-blue-950 text-base md:text-lg">The Management & Staff</p>

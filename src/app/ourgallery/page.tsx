@@ -1,25 +1,12 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
-import CodePolicies from "@/assets/CodeandPolicies.jpg";
-
-
-import ScienceLab from "@/assets/ScienceLaboratory.jpg";
-import ArtRoom from "@/assets/ArtRoom.jpg";
-import Library from "@/assets/Library.jpg";
-import ComputerLab from "@/assets/ComputerLab.jpg";
-import Sickbay from "@/assets/SickBay.jpg";
 import Playground from "@/assets/Playground.jpg";
-import Generator from "@/assets/LandingImage.jpg";
-import WhiteBoards from "@/assets/InteractiveWhiteBoards.jpg";
-import FireSystem from "@/assets/LandingImage.jpg";
-import AirConditioned from "@/assets/AirConditionedRooms.jpg";
-import SchoolHall from "@/assets/SchoolHall.jpg";
+
 import AwardGiving from "@/assets/AwardGiving.jpeg";
-import AutoCarousel6 from "@/assets/AutoCarousel6.jpeg";
-import AutoCarousel7 from "@/assets/AutoCarousel7.jpeg";
+
 import AutoCarousel8 from "@/assets/AutoCarousel8.jpeg";
-import AutoCarousel9 from "@/assets/AutoCarousel9.jpeg";
-import AutoCarousel10 from "@/assets/AutoCarousel10.jpeg";
+
 import AutoCarousel11 from "@/assets/AutoCarousel11.jpeg";
 import CareerDay1 from "@/assets/CareerDay1.png"
 import CareerDay2 from "@/assets/CareerDay2.png"
@@ -51,6 +38,18 @@ const eventSections = [
   },
 ];
 
+export const metadata:Metadata = {
+  title: "Our Gallery – Living Soul Schools",
+  description: "Explore a visual journey through the life of our school.",
+      openGraph: {
+    title: "Living Soul Schools | Our Gallery",
+    description: "A modern school in Lagos with quality education.",
+    url: "https://livingsoulschools.com/ourgallery",
+    type: "website",
+  
+  },
+};
+
 export default function Home() {
   return (
     <div className="">
@@ -79,12 +78,12 @@ Explore a visual journey through the life of our school. Each image captures the
       <div className="max-w-7xl mx-auto space-y-16">
         {eventSections.map((section, idx) => (
           <div key={idx} className="space-y-6">
-            {/* Section Title */}
+     
             <h2 className="text-center text-xl md:text-2xl font-semibold text-blue-950">
               {section.title}
             </h2>
 
-            {/* FLEX wrap (centered rows) */}
+            
             <div className="flex flex-wrap justify-center gap-6">
               {section.images.map((img, i) => (
                 <div

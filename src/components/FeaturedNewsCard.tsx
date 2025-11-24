@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -17,7 +19,7 @@ export default function FeaturedNews() {
   return (
     <section className="w-full space-y-4">
       {/* Custom Nav Buttons */}
-      <div className="flex justify-end gap-3">
+      <div className="flex justify-end gap-3  xl:hidden">
         <button className="swiper-button-prev flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 transition">
           <ChevronLeft className="w-6 h-6 text-gray-700" />
         </button>
@@ -46,7 +48,7 @@ export default function FeaturedNews() {
 >
   {featuredNewsData.map((item, i) => (
     <SwiperSlide key={i}>
-      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col mx-auto w-full max-w-sm">
+      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col mx-auto w-full max-w-sm mb-2">
         {/* Image */}
         <div className="relative w-full h-56 sm:h-60">
           <Image
@@ -60,12 +62,16 @@ export default function FeaturedNews() {
         {/* Content */}
         <div className="flex flex-col flex-1 p-4 justify-between">
           <p className="text-gray-700 text-sm mb-4">{item.news}</p>
+
+<Link href={`/newsandevents#${item.id}`} className="w-full">
           <Button
             variant="outline"
             className="w-full mx-auto text-black px-6 py-2"
           >
             Read More
           </Button>
+</Link>
+
         </div>
       </div>
     </SwiperSlide>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://livingsoulschools.com
+
+# Sitemaps
+Sitemap: https://livingsoulschools.com/sitemap.xml
